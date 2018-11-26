@@ -1,7 +1,7 @@
 import React from "react";
 
 const Content = () => (
-  <div className="container">
+  <div id="container" className="container">
     <form>
       <div className="form-group">
         <input
@@ -23,4 +23,5 @@ const Content = () => (
     </form>
   </div>
 );
+
 export default Content;

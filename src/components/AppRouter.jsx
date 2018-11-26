@@ -1,11 +1,13 @@
-import { BrowserRouter as Router, Route } from "react-router-dom";
+/* eslint-disable import/no-named-as-default */
+/* eslint-disable react/jsx-indent */
+import { Route, BrowserRouter as Router } from "react-router-dom";
+
 import { Provider } from "react-redux";
 import React from "react";
-
-import Root from "./Root";
-import Content from "./Content";
 import Home from "./Home";
-import signUp from "./Signup/SignUp";
+import Login from "../containers/Login";
+import signUp from "./signup/SignUp";
+import Root from "./Root";
 import store from "../store";
 
 const AppRouter = () => (
@@ -15,9 +17,9 @@ const AppRouter = () => (
         <Root>
           <div>
             <Route exact path="/" component={Home} />
-            <Route path="/login" component={Content} />
-            <Route path="/home" component={Home} />
+            <Route path="/login" component={Login} />
             <Route path="/signup" component={signUp} />
+            <Route path="/home" component={Home} />
           </div>
         </Root>
       </React.Fragment>

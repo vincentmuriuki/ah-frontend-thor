@@ -20,16 +20,34 @@ ReactWrapper {
     "ref": null,
     "rendered": Object {
       "instance": <div>
-        Author's Haven
+        <h3>
+          Author's Haven
+        </h3>
       </div>,
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "Author's Haven",
+        "children": <h3>
+          Author's Haven
+        </h3>,
       },
       "ref": null,
       "rendered": Array [
-        "Author's Haven",
+        Object {
+          "instance": <h3>
+            Author's Haven
+          </h3>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Author's Haven",
+          },
+          "ref": null,
+          "rendered": Array [
+            "Author's Haven",
+          ],
+          "type": "h3",
+        },
       ],
       "type": "div",
     },
@@ -44,16 +62,34 @@ ReactWrapper {
       "ref": null,
       "rendered": Object {
         "instance": <div>
-          Author's Haven
+          <h3>
+            Author's Haven
+          </h3>
         </div>,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Author's Haven",
+          "children": <h3>
+            Author's Haven
+          </h3>,
         },
         "ref": null,
         "rendered": Array [
-          "Author's Haven",
+          Object {
+            "instance": <h3>
+              Author's Haven
+            </h3>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Author's Haven",
+            },
+            "ref": null,
+            "rendered": Array [
+              "Author's Haven",
+            ],
+            "type": "h3",
+          },
         ],
         "type": "div",
       },
