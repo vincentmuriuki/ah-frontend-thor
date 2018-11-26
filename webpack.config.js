@@ -19,8 +19,12 @@ const config = {
       {
         test: /\.jsx?$/,
         use: ['babel-loader']
+      },
+      {
+        test: /\.s?css/,
+        use: ['style-loader', 'css-loader', 'sass-loader']
       }
-    ]
+    ],
   },
   plugins: [
    new HTMLWebpackPlugin({

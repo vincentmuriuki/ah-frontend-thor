@@ -4,10 +4,13 @@ class App extends React.Component {
   state = {
     name: 'john',
   };
+
+  renderGreeting = () => (
+    <h1>Welcome!!! {this.state.name}!</h1>
+  );
+
   render() {
-    return (
-      <h1>Welcome {this.state.name}!</h1>
-    );
+    return this.renderGreeting();
   }
 }
 
