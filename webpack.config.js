@@ -23,6 +23,10 @@ const config = {
       {
         test: /\.s?css/,
         use: ['style-loader', 'css-loader', 'sass-loader']
+      },
+      {
+        test: /\.(jpe?g|png|gif|svg|jpg|otf)$/i,
+        use: ['file-loader'],
       }
     ],
   },
