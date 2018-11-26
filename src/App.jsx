@@ -1,7 +1,14 @@
 import React from 'react';
 
-const App = () => (
-  <h1>Appggg</h1>
-);
+class App extends React.Component {
+  state = {
+    name: 'john',
+  };
+  render() {
+    return (
+      <h1>Welcome {this.state.name}!</h1>
+    );
+  }
+}
 
 export default App;
