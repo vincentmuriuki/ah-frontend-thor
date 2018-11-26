@@ -11,14 +11,22 @@ const config = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
   },
+  resolve: {
+    extensions: ['.js', '.jsx'],
+  },
+  module: {
+    rules: [
+      {
+        test: /\.jsx?$/,
+        use: ['babel-loader']
+      }
+    ]
+  },
   plugins: [
    new HTMLWebpackPlugin({
      template: './src/index.html',
    }),
-  ]
+  ],
 };
-
-
-console.log(config);
 
 module.exports = config;
