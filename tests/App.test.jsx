@@ -3,7 +3,7 @@ import React from "react";
 import { mount } from "enzyme";
 import puppeteer from "puppeteer";
 
-import App from "../src/App";
+import App from "../src/Components/App";
 
 describe("<App />", () => {
 	it("should render without crashing", () => {
