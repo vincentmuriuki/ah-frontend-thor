@@ -1,10 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import "./style.scss";
-import App from "./App";
+//import "./style.scss";
+import AppRouter from "./Components/AppRouter";
 
 ReactDOM.render(
-	<App />, 
+	<AppRouter />, 
 	document.getElementById("root"),
 );
+
