@@ -25,7 +25,7 @@ ShallowWrapper {
         >
           <a
             className="navbar-brand"
-            href="index.html"
+            href="/index.html"
           >
             <strong>
               Author's Haven
@@ -56,7 +56,7 @@ ShallowWrapper {
               >
                 <a
                   className="nav-link"
-                  href="articles.html"
+                  href="/articles.html"
                 >
                   Articles 
                   <span
@@ -65,62 +65,7 @@ ShallowWrapper {
                 </a>
               </li>
             </ul>
-            <ul
-              className="navbar-nav ml-auto"
-            >
-              <li
-                className="nav-item"
-              >
-                <form
-                  className="form-inline"
-                >
-                  <div
-                    className="md-form my-1"
-                  >
-                    <input
-                      aria-label="Search"
-                      className="form-control mr-sm-2"
-                      placeholder="Search"
-                      type="text"
-                    />
-                  </div>
-                </form>
-              </li>
-              <li
-                className="nav-item"
-              >
-                <NavLink
-                  activeClassName="active"
-                  aria-current="page"
-                  className="navbar-brand"
-                  to="/login"
-                >
-                  Login
-                </NavLink>
-              </li>
-              <li
-                className="nav-item"
-              >
-                <NavLink
-                  activeClassName="active"
-                  aria-current="page"
-                  className="navbar-brand"
-                  to="/signup"
-                >
-                  Signup
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  activeClassName="active"
-                  aria-current="page"
-                  className="navbar-brand"
-                  to="/Profile"
-                >
-                  <Connect(ProfileImage) />
-                </NavLink>
-              </li>
-            </ul>
+            <Connect(ProfileImage) />
           </div>
         </div>
       </nav>,
@@ -136,7 +81,7 @@ ShallowWrapper {
         >
           <a
             className="navbar-brand"
-            href="index.html"
+            href="/index.html"
           >
             <strong>
               Author's Haven
@@ -167,7 +112,7 @@ ShallowWrapper {
               >
                 <a
                   className="nav-link"
-                  href="articles.html"
+                  href="/articles.html"
                 >
                   Articles 
                   <span
@@ -176,62 +121,7 @@ ShallowWrapper {
                 </a>
               </li>
             </ul>
-            <ul
-              className="navbar-nav ml-auto"
-            >
-              <li
-                className="nav-item"
-              >
-                <form
-                  className="form-inline"
-                >
-                  <div
-                    className="md-form my-1"
-                  >
-                    <input
-                      aria-label="Search"
-                      className="form-control mr-sm-2"
-                      placeholder="Search"
-                      type="text"
-                    />
-                  </div>
-                </form>
-              </li>
-              <li
-                className="nav-item"
-              >
-                <NavLink
-                  activeClassName="active"
-                  aria-current="page"
-                  className="navbar-brand"
-                  to="/login"
-                >
-                  Login
-                </NavLink>
-              </li>
-              <li
-                className="nav-item"
-              >
-                <NavLink
-                  activeClassName="active"
-                  aria-current="page"
-                  className="navbar-brand"
-                  to="/signup"
-                >
-                  Signup
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  activeClassName="active"
-                  aria-current="page"
-                  className="navbar-brand"
-                  to="/Profile"
-                >
-                  <Connect(ProfileImage) />
-                </NavLink>
-              </li>
-            </ul>
+            <Connect(ProfileImage) />
           </div>
         </div>,
         "className": "navbar fixed-top navbar-expand-lg navbar-dark unique-color-dark scrolling-navbar",
@@ -245,7 +135,7 @@ ShallowWrapper {
           "children": Array [
             <a
               className="navbar-brand"
-              href="index.html"
+              href="/index.html"
             >
               <strong>
                 Author's Haven
@@ -276,7 +166,7 @@ ShallowWrapper {
                 >
                   <a
                     className="nav-link"
-                    href="articles.html"
+                    href="/articles.html"
                   >
                     Articles 
                     <span
@@ -285,62 +175,7 @@ ShallowWrapper {
                   </a>
                 </li>
               </ul>
-              <ul
-                className="navbar-nav ml-auto"
-              >
-                <li
-                  className="nav-item"
-                >
-                  <form
-                    className="form-inline"
-                  >
-                    <div
-                      className="md-form my-1"
-                    >
-                      <input
-                        aria-label="Search"
-                        className="form-control mr-sm-2"
-                        placeholder="Search"
-                        type="text"
-                      />
-                    </div>
-                  </form>
-                </li>
-                <li
-                  className="nav-item"
-                >
-                  <NavLink
-                    activeClassName="active"
-                    aria-current="page"
-                    className="navbar-brand"
-                    to="/login"
-                  >
-                    Login
-                  </NavLink>
-                </li>
-                <li
-                  className="nav-item"
-                >
-                  <NavLink
-                    activeClassName="active"
-                    aria-current="page"
-                    className="navbar-brand"
-                    to="/signup"
-                  >
-                    Signup
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    activeClassName="active"
-                    aria-current="page"
-                    className="navbar-brand"
-                    to="/Profile"
-                  >
-                    <Connect(ProfileImage) />
-                  </NavLink>
-                </li>
-              </ul>
+              <Connect(ProfileImage) />
             </div>,
           ],
           "className": "container",
@@ -356,7 +191,7 @@ ShallowWrapper {
                 Author's Haven
               </strong>,
               "className": "navbar-brand",
-              "href": "index.html",
+              "href": "/index.html",
             },
             "ref": null,
             "rendered": Object {
@@ -416,7 +251,7 @@ ShallowWrapper {
                   >
                     <a
                       className="nav-link"
-                      href="articles.html"
+                      href="/articles.html"
                     >
                       Articles 
                       <span
@@ -425,62 +260,7 @@ ShallowWrapper {
                     </a>
                   </li>
                 </ul>,
-                <ul
-                  className="navbar-nav ml-auto"
-                >
-                  <li
-                    className="nav-item"
-                  >
-                    <form
-                      className="form-inline"
-                    >
-                      <div
-                        className="md-form my-1"
-                      >
-                        <input
-                          aria-label="Search"
-                          className="form-control mr-sm-2"
-                          placeholder="Search"
-                          type="text"
-                        />
-                      </div>
-                    </form>
-                  </li>
-                  <li
-                    className="nav-item"
-                  >
-                    <NavLink
-                      activeClassName="active"
-                      aria-current="page"
-                      className="navbar-brand"
-                      to="/login"
-                    >
-                      Login
-                    </NavLink>
-                  </li>
-                  <li
-                    className="nav-item"
-                  >
-                    <NavLink
-                      activeClassName="active"
-                      aria-current="page"
-                      className="navbar-brand"
-                      to="/signup"
-                    >
-                      Signup
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink
-                      activeClassName="active"
-                      aria-current="page"
-                      className="navbar-brand"
-                      to="/Profile"
-                    >
-                      <Connect(ProfileImage) />
-                    </NavLink>
-                  </li>
-                </ul>,
+                <Connect(ProfileImage) />,
               ],
               "className": "collapse navbar-collapse",
               "id": "navbarSupportedContent",
@@ -497,7 +277,7 @@ ShallowWrapper {
                   >
                     <a
                       className="nav-link"
-                      href="articles.html"
+                      href="/articles.html"
                     >
                       Articles 
                       <span
@@ -515,7 +295,7 @@ ShallowWrapper {
                   "props": Object {
                     "children": <a
                       className="nav-link"
-                      href="articles.html"
+                      href="/articles.html"
                     >
                       Articles 
                       <span
@@ -537,7 +317,7 @@ ShallowWrapper {
                         />,
                       ],
                       "className": "nav-link",
-                      "href": "articles.html",
+                      "href": "/articles.html",
                     },
                     "ref": null,
                     "rendered": Array [
@@ -563,248 +343,11 @@ ShallowWrapper {
               Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
-                    <li
-                      className="nav-item"
-                    >
-                      <form
-                        className="form-inline"
-                      >
-                        <div
-                          className="md-form my-1"
-                        >
-                          <input
-                            aria-label="Search"
-                            className="form-control mr-sm-2"
-                            placeholder="Search"
-                            type="text"
-                          />
-                        </div>
-                      </form>
-                    </li>,
-                    <li
-                      className="nav-item"
-                    >
-                      <NavLink
-                        activeClassName="active"
-                        aria-current="page"
-                        className="navbar-brand"
-                        to="/login"
-                      >
-                        Login
-                      </NavLink>
-                    </li>,
-                    <li
-                      className="nav-item"
-                    >
-                      <NavLink
-                        activeClassName="active"
-                        aria-current="page"
-                        className="navbar-brand"
-                        to="/signup"
-                      >
-                        Signup
-                      </NavLink>
-                    </li>,
-                    <li>
-                      <NavLink
-                        activeClassName="active"
-                        aria-current="page"
-                        className="navbar-brand"
-                        to="/Profile"
-                      >
-                        <Connect(ProfileImage) />
-                      </NavLink>
-                    </li>,
-                  ],
-                  "className": "navbar-nav ml-auto",
-                },
+                "nodeType": "class",
+                "props": Object {},
                 "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": <form
-                        className="form-inline"
-                      >
-                        <div
-                          className="md-form my-1"
-                        >
-                          <input
-                            aria-label="Search"
-                            className="form-control mr-sm-2"
-                            placeholder="Search"
-                            type="text"
-                          />
-                        </div>
-                      </form>,
-                      "className": "nav-item",
-                    },
-                    "ref": null,
-                    "rendered": Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": <div
-                          className="md-form my-1"
-                        >
-                          <input
-                            aria-label="Search"
-                            className="form-control mr-sm-2"
-                            placeholder="Search"
-                            type="text"
-                          />
-                        </div>,
-                        "className": "form-inline",
-                      },
-                      "ref": null,
-                      "rendered": Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "children": <input
-                            aria-label="Search"
-                            className="form-control mr-sm-2"
-                            placeholder="Search"
-                            type="text"
-                          />,
-                          "className": "md-form my-1",
-                        },
-                        "ref": null,
-                        "rendered": Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "host",
-                          "props": Object {
-                            "aria-label": "Search",
-                            "className": "form-control mr-sm-2",
-                            "placeholder": "Search",
-                            "type": "text",
-                          },
-                          "ref": null,
-                          "rendered": null,
-                          "type": "input",
-                        },
-                        "type": "div",
-                      },
-                      "type": "form",
-                    },
-                    "type": "li",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": <NavLink
-                        activeClassName="active"
-                        aria-current="page"
-                        className="navbar-brand"
-                        to="/login"
-                      >
-                        Login
-                      </NavLink>,
-                      "className": "nav-item",
-                    },
-                    "ref": null,
-                    "rendered": Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "function",
-                      "props": Object {
-                        "activeClassName": "active",
-                        "aria-current": "page",
-                        "children": "Login",
-                        "className": "navbar-brand",
-                        "to": "/login",
-                      },
-                      "ref": null,
-                      "rendered": "Login",
-                      "type": [Function],
-                    },
-                    "type": "li",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": <NavLink
-                        activeClassName="active"
-                        aria-current="page"
-                        className="navbar-brand"
-                        to="/signup"
-                      >
-                        Signup
-                      </NavLink>,
-                      "className": "nav-item",
-                    },
-                    "ref": null,
-                    "rendered": Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "function",
-                      "props": Object {
-                        "activeClassName": "active",
-                        "aria-current": "page",
-                        "children": "Signup",
-                        "className": "navbar-brand",
-                        "to": "/signup",
-                      },
-                      "ref": null,
-                      "rendered": "Signup",
-                      "type": [Function],
-                    },
-                    "type": "li",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": <NavLink
-                        activeClassName="active"
-                        aria-current="page"
-                        className="navbar-brand"
-                        to="/Profile"
-                      >
-                        <Connect(ProfileImage) />
-                      </NavLink>,
-                    },
-                    "ref": null,
-                    "rendered": Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "function",
-                      "props": Object {
-                        "activeClassName": "active",
-                        "aria-current": "page",
-                        "children": <Connect(ProfileImage) />,
-                        "className": "navbar-brand",
-                        "to": "/Profile",
-                      },
-                      "ref": null,
-                      "rendered": Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "class",
-                        "props": Object {},
-                        "ref": null,
-                        "rendered": null,
-                        "type": [Function],
-                      },
-                      "type": [Function],
-                    },
-                    "type": "li",
-                  },
-                ],
-                "type": "ul",
+                "rendered": null,
+                "type": [Function],
               },
             ],
             "type": "div",
@@ -830,7 +373,7 @@ ShallowWrapper {
           >
             <a
               className="navbar-brand"
-              href="index.html"
+              href="/index.html"
             >
               <strong>
                 Author's Haven
@@ -861,7 +404,7 @@ ShallowWrapper {
                 >
                   <a
                     className="nav-link"
-                    href="articles.html"
+                    href="/articles.html"
                   >
                     Articles 
                     <span
@@ -870,62 +413,7 @@ ShallowWrapper {
                   </a>
                 </li>
               </ul>
-              <ul
-                className="navbar-nav ml-auto"
-              >
-                <li
-                  className="nav-item"
-                >
-                  <form
-                    className="form-inline"
-                  >
-                    <div
-                      className="md-form my-1"
-                    >
-                      <input
-                        aria-label="Search"
-                        className="form-control mr-sm-2"
-                        placeholder="Search"
-                        type="text"
-                      />
-                    </div>
-                  </form>
-                </li>
-                <li
-                  className="nav-item"
-                >
-                  <NavLink
-                    activeClassName="active"
-                    aria-current="page"
-                    className="navbar-brand"
-                    to="/login"
-                  >
-                    Login
-                  </NavLink>
-                </li>
-                <li
-                  className="nav-item"
-                >
-                  <NavLink
-                    activeClassName="active"
-                    aria-current="page"
-                    className="navbar-brand"
-                    to="/signup"
-                  >
-                    Signup
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    activeClassName="active"
-                    aria-current="page"
-                    className="navbar-brand"
-                    to="/Profile"
-                  >
-                    <Connect(ProfileImage) />
-                  </NavLink>
-                </li>
-              </ul>
+              <Connect(ProfileImage) />
             </div>
           </div>
         </nav>,
@@ -941,7 +429,7 @@ ShallowWrapper {
           >
             <a
               className="navbar-brand"
-              href="index.html"
+              href="/index.html"
             >
               <strong>
                 Author's Haven
@@ -972,7 +460,7 @@ ShallowWrapper {
                 >
                   <a
                     className="nav-link"
-                    href="articles.html"
+                    href="/articles.html"
                   >
                     Articles 
                     <span
@@ -981,62 +469,7 @@ ShallowWrapper {
                   </a>
                 </li>
               </ul>
-              <ul
-                className="navbar-nav ml-auto"
-              >
-                <li
-                  className="nav-item"
-                >
-                  <form
-                    className="form-inline"
-                  >
-                    <div
-                      className="md-form my-1"
-                    >
-                      <input
-                        aria-label="Search"
-                        className="form-control mr-sm-2"
-                        placeholder="Search"
-                        type="text"
-                      />
-                    </div>
-                  </form>
-                </li>
-                <li
-                  className="nav-item"
-                >
-                  <NavLink
-                    activeClassName="active"
-                    aria-current="page"
-                    className="navbar-brand"
-                    to="/login"
-                  >
-                    Login
-                  </NavLink>
-                </li>
-                <li
-                  className="nav-item"
-                >
-                  <NavLink
-                    activeClassName="active"
-                    aria-current="page"
-                    className="navbar-brand"
-                    to="/signup"
-                  >
-                    Signup
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    activeClassName="active"
-                    aria-current="page"
-                    className="navbar-brand"
-                    to="/Profile"
-                  >
-                    <Connect(ProfileImage) />
-                  </NavLink>
-                </li>
-              </ul>
+              <Connect(ProfileImage) />
             </div>
           </div>,
           "className": "navbar fixed-top navbar-expand-lg navbar-dark unique-color-dark scrolling-navbar",
@@ -1050,7 +483,7 @@ ShallowWrapper {
             "children": Array [
               <a
                 className="navbar-brand"
-                href="index.html"
+                href="/index.html"
               >
                 <strong>
                   Author's Haven
@@ -1081,7 +514,7 @@ ShallowWrapper {
                   >
                     <a
                       className="nav-link"
-                      href="articles.html"
+                      href="/articles.html"
                     >
                       Articles 
                       <span
@@ -1090,62 +523,7 @@ ShallowWrapper {
                     </a>
                   </li>
                 </ul>
-                <ul
-                  className="navbar-nav ml-auto"
-                >
-                  <li
-                    className="nav-item"
-                  >
-                    <form
-                      className="form-inline"
-                    >
-                      <div
-                        className="md-form my-1"
-                      >
-                        <input
-                          aria-label="Search"
-                          className="form-control mr-sm-2"
-                          placeholder="Search"
-                          type="text"
-                        />
-                      </div>
-                    </form>
-                  </li>
-                  <li
-                    className="nav-item"
-                  >
-                    <NavLink
-                      activeClassName="active"
-                      aria-current="page"
-                      className="navbar-brand"
-                      to="/login"
-                    >
-                      Login
-                    </NavLink>
-                  </li>
-                  <li
-                    className="nav-item"
-                  >
-                    <NavLink
-                      activeClassName="active"
-                      aria-current="page"
-                      className="navbar-brand"
-                      to="/signup"
-                    >
-                      Signup
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink
-                      activeClassName="active"
-                      aria-current="page"
-                      className="navbar-brand"
-                      to="/Profile"
-                    >
-                      <Connect(ProfileImage) />
-                    </NavLink>
-                  </li>
-                </ul>
+                <Connect(ProfileImage) />
               </div>,
             ],
             "className": "container",
@@ -1161,7 +539,7 @@ ShallowWrapper {
                   Author's Haven
                 </strong>,
                 "className": "navbar-brand",
-                "href": "index.html",
+                "href": "/index.html",
               },
               "ref": null,
               "rendered": Object {
@@ -1221,7 +599,7 @@ ShallowWrapper {
                     >
                       <a
                         className="nav-link"
-                        href="articles.html"
+                        href="/articles.html"
                       >
                         Articles 
                         <span
@@ -1230,62 +608,7 @@ ShallowWrapper {
                       </a>
                     </li>
                   </ul>,
-                  <ul
-                    className="navbar-nav ml-auto"
-                  >
-                    <li
-                      className="nav-item"
-                    >
-                      <form
-                        className="form-inline"
-                      >
-                        <div
-                          className="md-form my-1"
-                        >
-                          <input
-                            aria-label="Search"
-                            className="form-control mr-sm-2"
-                            placeholder="Search"
-                            type="text"
-                          />
-                        </div>
-                      </form>
-                    </li>
-                    <li
-                      className="nav-item"
-                    >
-                      <NavLink
-                        activeClassName="active"
-                        aria-current="page"
-                        className="navbar-brand"
-                        to="/login"
-                      >
-                        Login
-                      </NavLink>
-                    </li>
-                    <li
-                      className="nav-item"
-                    >
-                      <NavLink
-                        activeClassName="active"
-                        aria-current="page"
-                        className="navbar-brand"
-                        to="/signup"
-                      >
-                        Signup
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink
-                        activeClassName="active"
-                        aria-current="page"
-                        className="navbar-brand"
-                        to="/Profile"
-                      >
-                        <Connect(ProfileImage) />
-                      </NavLink>
-                    </li>
-                  </ul>,
+                  <Connect(ProfileImage) />,
                 ],
                 "className": "collapse navbar-collapse",
                 "id": "navbarSupportedContent",
@@ -1302,7 +625,7 @@ ShallowWrapper {
                     >
                       <a
                         className="nav-link"
-                        href="articles.html"
+                        href="/articles.html"
                       >
                         Articles 
                         <span
@@ -1320,7 +643,7 @@ ShallowWrapper {
                     "props": Object {
                       "children": <a
                         className="nav-link"
-                        href="articles.html"
+                        href="/articles.html"
                       >
                         Articles 
                         <span
@@ -1342,7 +665,7 @@ ShallowWrapper {
                           />,
                         ],
                         "className": "nav-link",
-                        "href": "articles.html",
+                        "href": "/articles.html",
                       },
                       "ref": null,
                       "rendered": Array [
@@ -1368,248 +691,11 @@ ShallowWrapper {
                 Object {
                   "instance": null,
                   "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      <li
-                        className="nav-item"
-                      >
-                        <form
-                          className="form-inline"
-                        >
-                          <div
-                            className="md-form my-1"
-                          >
-                            <input
-                              aria-label="Search"
-                              className="form-control mr-sm-2"
-                              placeholder="Search"
-                              type="text"
-                            />
-                          </div>
-                        </form>
-                      </li>,
-                      <li
-                        className="nav-item"
-                      >
-                        <NavLink
-                          activeClassName="active"
-                          aria-current="page"
-                          className="navbar-brand"
-                          to="/login"
-                        >
-                          Login
-                        </NavLink>
-                      </li>,
-                      <li
-                        className="nav-item"
-                      >
-                        <NavLink
-                          activeClassName="active"
-                          aria-current="page"
-                          className="navbar-brand"
-                          to="/signup"
-                        >
-                          Signup
-                        </NavLink>
-                      </li>,
-                      <li>
-                        <NavLink
-                          activeClassName="active"
-                          aria-current="page"
-                          className="navbar-brand"
-                          to="/Profile"
-                        >
-                          <Connect(ProfileImage) />
-                        </NavLink>
-                      </li>,
-                    ],
-                    "className": "navbar-nav ml-auto",
-                  },
+                  "nodeType": "class",
+                  "props": Object {},
                   "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": <form
-                          className="form-inline"
-                        >
-                          <div
-                            className="md-form my-1"
-                          >
-                            <input
-                              aria-label="Search"
-                              className="form-control mr-sm-2"
-                              placeholder="Search"
-                              type="text"
-                            />
-                          </div>
-                        </form>,
-                        "className": "nav-item",
-                      },
-                      "ref": null,
-                      "rendered": Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "children": <div
-                            className="md-form my-1"
-                          >
-                            <input
-                              aria-label="Search"
-                              className="form-control mr-sm-2"
-                              placeholder="Search"
-                              type="text"
-                            />
-                          </div>,
-                          "className": "form-inline",
-                        },
-                        "ref": null,
-                        "rendered": Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "host",
-                          "props": Object {
-                            "children": <input
-                              aria-label="Search"
-                              className="form-control mr-sm-2"
-                              placeholder="Search"
-                              type="text"
-                            />,
-                            "className": "md-form my-1",
-                          },
-                          "ref": null,
-                          "rendered": Object {
-                            "instance": null,
-                            "key": undefined,
-                            "nodeType": "host",
-                            "props": Object {
-                              "aria-label": "Search",
-                              "className": "form-control mr-sm-2",
-                              "placeholder": "Search",
-                              "type": "text",
-                            },
-                            "ref": null,
-                            "rendered": null,
-                            "type": "input",
-                          },
-                          "type": "div",
-                        },
-                        "type": "form",
-                      },
-                      "type": "li",
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": <NavLink
-                          activeClassName="active"
-                          aria-current="page"
-                          className="navbar-brand"
-                          to="/login"
-                        >
-                          Login
-                        </NavLink>,
-                        "className": "nav-item",
-                      },
-                      "ref": null,
-                      "rendered": Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "function",
-                        "props": Object {
-                          "activeClassName": "active",
-                          "aria-current": "page",
-                          "children": "Login",
-                          "className": "navbar-brand",
-                          "to": "/login",
-                        },
-                        "ref": null,
-                        "rendered": "Login",
-                        "type": [Function],
-                      },
-                      "type": "li",
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": <NavLink
-                          activeClassName="active"
-                          aria-current="page"
-                          className="navbar-brand"
-                          to="/signup"
-                        >
-                          Signup
-                        </NavLink>,
-                        "className": "nav-item",
-                      },
-                      "ref": null,
-                      "rendered": Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "function",
-                        "props": Object {
-                          "activeClassName": "active",
-                          "aria-current": "page",
-                          "children": "Signup",
-                          "className": "navbar-brand",
-                          "to": "/signup",
-                        },
-                        "ref": null,
-                        "rendered": "Signup",
-                        "type": [Function],
-                      },
-                      "type": "li",
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": <NavLink
-                          activeClassName="active"
-                          aria-current="page"
-                          className="navbar-brand"
-                          to="/Profile"
-                        >
-                          <Connect(ProfileImage) />
-                        </NavLink>,
-                      },
-                      "ref": null,
-                      "rendered": Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "function",
-                        "props": Object {
-                          "activeClassName": "active",
-                          "aria-current": "page",
-                          "children": <Connect(ProfileImage) />,
-                          "className": "navbar-brand",
-                          "to": "/Profile",
-                        },
-                        "ref": null,
-                        "rendered": Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "class",
-                          "props": Object {},
-                          "ref": null,
-                          "rendered": null,
-                          "type": [Function],
-                        },
-                        "type": [Function],
-                      },
-                      "type": "li",
-                    },
-                  ],
-                  "type": "ul",
+                  "rendered": null,
+                  "type": [Function],
                 },
               ],
               "type": "div",
