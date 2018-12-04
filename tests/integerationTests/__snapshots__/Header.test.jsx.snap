@@ -18,7 +18,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <footer
-        className="page-footer fixed-bottom font-small unique-color-dark"
+        className="page-footer font-small unique-color-dark"
       >
         <div
           className="container"
@@ -124,7 +124,7 @@ ShallowWrapper {
             </a>
           </div>,
         ],
-        "className": "page-footer fixed-bottom font-small unique-color-dark",
+        "className": "page-footer font-small unique-color-dark",
       },
       "ref": null,
       "rendered": Array [
@@ -397,7 +397,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <footer
-          className="page-footer fixed-bottom font-small unique-color-dark"
+          className="page-footer font-small unique-color-dark"
         >
           <div
             className="container"
@@ -503,7 +503,7 @@ ShallowWrapper {
               </a>
             </div>,
           ],
-          "className": "page-footer fixed-bottom font-small unique-color-dark",
+          "className": "page-footer font-small unique-color-dark",
         },
         "ref": null,
         "rendered": Array [

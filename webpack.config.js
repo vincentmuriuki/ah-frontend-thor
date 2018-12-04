@@ -1,8 +1,8 @@
 const path = require("path");
-const Dotenv = require("dotenv-webpack");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
+const Dotenv = require("dotenv-webpack");
 
-const mode = process.env.NODE_ENV || "production";
+const mode = process.NODE_ENV || "production";
 
 const config = {
   mode,

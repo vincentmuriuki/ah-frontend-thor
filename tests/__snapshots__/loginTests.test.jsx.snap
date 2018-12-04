@@ -1479,6 +1479,14 @@ ShallowWrapper {
                 >
                   Signup
                 </NavLink>
+                <NavLink
+                  activeClassName="active"
+                  aria-current="page"
+                  className="navbar-brand"
+                  to="/Profile"
+                >
+                  Profile
+                </NavLink>
               </li>
             </ul>
           </div>
@@ -1581,6 +1589,14 @@ ShallowWrapper {
                 >
                   Signup
                 </NavLink>
+                <NavLink
+                  activeClassName="active"
+                  aria-current="page"
+                  className="navbar-brand"
+                  to="/Profile"
+                >
+                  Profile
+                </NavLink>
               </li>
             </ul>
           </div>
@@ -1680,6 +1696,14 @@ ShallowWrapper {
                     to="/signup"
                   >
                     Signup
+                  </NavLink>
+                  <NavLink
+                    activeClassName="active"
+                    aria-current="page"
+                    className="navbar-brand"
+                    to="/Profile"
+                  >
+                    Profile
                   </NavLink>
                 </li>
               </ul>
@@ -1811,6 +1835,14 @@ ShallowWrapper {
                       to="/signup"
                     >
                       Signup
+                    </NavLink>
+                    <NavLink
+                      activeClassName="active"
+                      aria-current="page"
+                      className="navbar-brand"
+                      to="/Profile"
+                    >
+                      Profile
                     </NavLink>
                   </li>
                 </ul>,
@@ -1944,6 +1976,14 @@ ShallowWrapper {
                       >
                         Signup
                       </NavLink>
+                      <NavLink
+                        activeClassName="active"
+                        aria-current="page"
+                        className="navbar-brand"
+                        to="/Profile"
+                      >
+                        Profile
+                      </NavLink>
                     </li>,
                   ],
                   "className": "navbar-nav ml-auto",
@@ -2062,32 +2102,59 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": <NavLink
-                        activeClassName="active"
-                        aria-current="page"
-                        className="navbar-brand"
-                        to="/signup"
-                      >
-                        Signup
-                      </NavLink>,
+                      "children": Array [
+                        <NavLink
+                          activeClassName="active"
+                          aria-current="page"
+                          className="navbar-brand"
+                          to="/signup"
+                        >
+                          Signup
+                        </NavLink>,
+                        <NavLink
+                          activeClassName="active"
+                          aria-current="page"
+                          className="navbar-brand"
+                          to="/Profile"
+                        >
+                          Profile
+                        </NavLink>,
+                      ],
                       "className": "nav-item",
                     },
                     "ref": null,
-                    "rendered": Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "function",
-                      "props": Object {
-                        "activeClassName": "active",
-                        "aria-current": "page",
-                        "children": "Signup",
-                        "className": "navbar-brand",
-                        "to": "/signup",
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "activeClassName": "active",
+                          "aria-current": "page",
+                          "children": "Signup",
+                          "className": "navbar-brand",
+                          "to": "/signup",
+                        },
+                        "ref": null,
+                        "rendered": "Signup",
+                        "type": [Function],
                       },
-                      "ref": null,
-                      "rendered": "Signup",
-                      "type": [Function],
-                    },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "activeClassName": "active",
+                          "aria-current": "page",
+                          "children": "Profile",
+                          "className": "navbar-brand",
+                          "to": "/Profile",
+                        },
+                        "ref": null,
+                        "rendered": "Profile",
+                        "type": [Function],
+                      },
+                    ],
                     "type": "li",
                   },
                 ],
@@ -2202,6 +2269,14 @@ ShallowWrapper {
                   >
                     Signup
                   </NavLink>
+                  <NavLink
+                    activeClassName="active"
+                    aria-current="page"
+                    className="navbar-brand"
+                    to="/Profile"
+                  >
+                    Profile
+                  </NavLink>
                 </li>
               </ul>
             </div>
@@ -2304,6 +2379,14 @@ ShallowWrapper {
                   >
                     Signup
                   </NavLink>
+                  <NavLink
+                    activeClassName="active"
+                    aria-current="page"
+                    className="navbar-brand"
+                    to="/Profile"
+                  >
+                    Profile
+                  </NavLink>
                 </li>
               </ul>
             </div>
@@ -2403,6 +2486,14 @@ ShallowWrapper {
                       to="/signup"
                     >
                       Signup
+                    </NavLink>
+                    <NavLink
+                      activeClassName="active"
+                      aria-current="page"
+                      className="navbar-brand"
+                      to="/Profile"
+                    >
+                      Profile
                     </NavLink>
                   </li>
                 </ul>
@@ -2534,6 +2625,14 @@ ShallowWrapper {
                         to="/signup"
                       >
                         Signup
+                      </NavLink>
+                      <NavLink
+                        activeClassName="active"
+                        aria-current="page"
+                        className="navbar-brand"
+                        to="/Profile"
+                      >
+                        Profile
                       </NavLink>
                     </li>
                   </ul>,
@@ -2667,6 +2766,14 @@ ShallowWrapper {
                         >
                           Signup
                         </NavLink>
+                        <NavLink
+                          activeClassName="active"
+                          aria-current="page"
+                          className="navbar-brand"
+                          to="/Profile"
+                        >
+                          Profile
+                        </NavLink>
                       </li>,
                     ],
                     "className": "navbar-nav ml-auto",
@@ -2785,32 +2892,59 @@ ShallowWrapper {
                       "key": undefined,
                       "nodeType": "host",
                       "props": Object {
-                        "children": <NavLink
-                          activeClassName="active"
-                          aria-current="page"
-                          className="navbar-brand"
-                          to="/signup"
-                        >
-                          Signup
-                        </NavLink>,
+                        "children": Array [
+                          <NavLink
+                            activeClassName="active"
+                            aria-current="page"
+                            className="navbar-brand"
+                            to="/signup"
+                          >
+                            Signup
+                          </NavLink>,
+                          <NavLink
+                            activeClassName="active"
+                            aria-current="page"
+                            className="navbar-brand"
+                            to="/Profile"
+                          >
+                            Profile
+                          </NavLink>,
+                        ],
                         "className": "nav-item",
                       },
                       "ref": null,
-                      "rendered": Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "function",
-                        "props": Object {
-                          "activeClassName": "active",
-                          "aria-current": "page",
-                          "children": "Signup",
-                          "className": "navbar-brand",
-                          "to": "/signup",
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "activeClassName": "active",
+                            "aria-current": "page",
+                            "children": "Signup",
+                            "className": "navbar-brand",
+                            "to": "/signup",
+                          },
+                          "ref": null,
+                          "rendered": "Signup",
+                          "type": [Function],
                         },
-                        "ref": null,
-                        "rendered": "Signup",
-                        "type": [Function],
-                      },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "activeClassName": "active",
+                            "aria-current": "page",
+                            "children": "Profile",
+                            "className": "navbar-brand",
+                            "to": "/Profile",
+                          },
+                          "ref": null,
+                          "rendered": "Profile",
+                          "type": [Function],
+                        },
+                      ],
                       "type": "li",
                     },
                   ],

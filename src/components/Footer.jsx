@@ -3,7 +3,7 @@ import React from "react";
 export default () => (
   <div>
     {/* <!-- Footer --> */}
-    <footer className="page-footer fixed-bottom font-small unique-color-dark">
+    <footer className="page-footer font-small unique-color-dark">
 
 
       {/* <!-- Footer Elements --> */}
