@@ -4,6 +4,8 @@ import { LOGIN, LOGIN_ERROR } from "./types";
 export const loginUrl = "https://ah-backend-thor.herokuapp.com/api/users/login/";
 
 export const alert=(username, token)=>{
+  localStorage.setItem("token", token);
+  localStorage.setItem("username", username);
   swal.showLoading();
   swal({
     type: "success",
@@ -11,8 +13,6 @@ export const alert=(username, token)=>{
     showConfirmButton: false,
     timer: 3000,
   });
-  window.localStorage.setItem("token", token);
-  window.localStorage.setItem("username", username);
   window.location.replace("/");
 };
 
@@ -49,8 +49,7 @@ const login = (loginData) => {
 
   const fetchObject = {
     method: "POST",
-    mode: "cors",
-    headers: { "content-type": "application/json","Access-Control-Allow-Origin": "*",},
+    headers: { "content-type": "application/json"},
     body: JSON.stringify(user)
   };
   return (dispatch)=>{

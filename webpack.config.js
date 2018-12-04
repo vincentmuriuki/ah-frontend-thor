@@ -1,12 +1,13 @@
 const path = require("path");
-const Dotenv = require("dotenv-webpack");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
+const Dotenv = require("dotenv-webpack");
+const webpack = require('webpack');
 
-const mode = process.env.NODE_ENV || "production";
+const mode = process.NODE_ENV || "production";
 
 const config = {
   mode,
-  entry: ["babel-polyfill","./src/index.jsx"],
+  entry: ["babel-polyfill", "./src/index.jsx"],
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
@@ -14,7 +15,7 @@ const config = {
   },
   resolve: {
     extensions: [".js", ".jsx"],
-    modules:[path.resolve(__dirname, "src"),"node_modules"],
+    modules: [path.resolve(__dirname, "src"), "node_modules"]
   },
   module: {
     rules: [
@@ -31,14 +32,24 @@ const config = {
         use: ["file-loader"]
       }
     ]
-  },devServer: {
-    historyApiFallback: true,
+  },
+  devServer: {
+    historyApiFallback: true
   },
   plugins: [
     new HTMLWebpackPlugin({
       template: "./src/index.html"
     }),
-    new Dotenv()
+    new Dotenv({
+      path: './.env',
+      safe: true,
+      systemvars: true,
+      silent: true
+    }),
+    new webpack.DefinePlugin({
+      "process.env.NODE_ENV": JSON.stringify(process.env.NODE_ENV),
+      "process.env.DEBUG": JSON.stringify(process.env.API_URL)
+    })
   ]
 };
 module.exports = config;

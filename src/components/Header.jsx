@@ -7,6 +7,7 @@ const Header = () => (
       <div className="container">
         <a className="navbar-brand" href="index.html">
           <strong>Author's Haven</strong>
+          {console.log(process.env)}
         </a>
         <button
           className="navbar-toggler"
@@ -23,7 +24,7 @@ const Header = () => (
           <ul className="navbar-nav mr-auto">
             <li className="nav-item">
               <a className="nav-link" href="articles.html">
-                  Articles 
+                  Articles
                 {" "}
                 <span className="sr-only" />
               </a>
@@ -52,6 +53,10 @@ const Header = () => (
               <NavLink to="/signup" className="navbar-brand">
                   Signup
               </NavLink>
+              <NavLink to={"/Profile"} className={"navbar-brand"}>
+
+				        Profile
+			        </NavLink>
             </li>
           </ul>
         </div>
