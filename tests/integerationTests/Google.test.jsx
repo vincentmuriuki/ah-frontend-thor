@@ -94,6 +94,7 @@ describe("Provider and Home", () => {
       <Google socialLogin={onSuccess} url="google_url" isLoggedIn={false} />
     );
     wrapper.prop("onSuccess")({ accessToken: "some access tokemn" });
+    wrapper.prop("onFailure")({ accessToken: "some access tokemn" });
     expect(onSuccess).toHaveBeenCalled();
   });
 

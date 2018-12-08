@@ -1,44 +1,43 @@
-import swal from "sweetalert2";
-import { LOGIN, LOGIN_ERROR } from "./types";
+/* eslint-disable no-self-assign */
+/* eslint-disable no-undef */
+/* eslint-disable prefer-destructuring */
+import toastr from "toastr";
 
 export const loginUrl = "https://ah-backend-thor.herokuapp.com/api/users/login/";
 
-export const alert=(username, token)=>{
-  localStorage.setItem("token", token);
-  localStorage.setItem("username", username);
-  swal.showLoading();
-  swal({
-    type: "success",
-    title: `Logging in as ${username}!`,
-    showConfirmButton: false,
-    timer: 3000,
-  });
-  window.location.replace("/");
+export const alert=(type,errorMsg,username, token, url)=>{
+  if(type === "error" && !username && !token){
+    toastr.error(errorMsg);
+  }
+  else if(type==="success" && !errorMsg){
+    toastr.success(`Logging in as ${username}!`);
+
+    localStorage.setItem("token", token);
+    localStorage.setItem("username", username);
+    setTimeout(() => window.location.replace(url), 3000);
+  };
+
 };
+
+export const errorAlert =(type,errorMsg)=>((alert(type,errorMsg,null,null)));
 
 export const runFetch =(dispatch, fetchObject)=> fetch(
   loginUrl,
   fetchObject
 )
   .then(res => (
-    res.json().then(data => {
-      if (res.ok) {
-        return Promise.resolve(data);
-      }
-      return Promise.reject(data);
-    })
+    res.json().then(data => ((res.ok && Promise.resolve(data)) || (!res.ok && Promise.reject(data))))
   ))
   .then(data=> {
     if ("user_token" in data.user) {
       dispatch({
-        type:LOGIN,
-        payload:data.user.user_token});
-      alert(data.user.username, data.user.user_token);
+        type:"LOGIN",
+        payload: data.user});
     }})
   .catch( error => {
     dispatch({
-      type:LOGIN_ERROR,
-      payload:"errors" in error ? error.errors : JSON.stringify(error.detail)});
+      type:"LOGIN_ERROR",
+      payload: typeof error === "string" ? error.errors : error.errors.error[0]});
   });
 
 const login = (loginData) => {

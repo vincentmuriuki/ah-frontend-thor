@@ -121,11 +121,11 @@ describe("test the login container", () => {
   wrapper.setProps({loginUser:jest.fn()});
   const formWrapper = wrapper.dive().find("Form");
   it("should mount the login component", () => {
-    
+
     formWrapper.dive().find("Input").first().simulate("change", fakeEvent);
     formWrapper.dive().find("Input").last().simulate("change", fakeEvent);
     formWrapper.simulate("submit", fakeEvent);
-   
+
   });
   it("smulate change on first input field", () => {
     formWrapper.dive().find("Input").first().simulate("change", fakeEvent);
@@ -146,7 +146,7 @@ describe("Login", () => {
       options: optionsObject
     };
     expect(mapStateToProps(state).options).toEqual(optionsObject);
-    
+
   });
 
   it("Should pass action to props on submit", () => {
@@ -174,15 +174,14 @@ describe("<Inputs />", () => {
 const initialState = {errors:"", user: null};
 describe("login reducer ", () => {
   test("tests  log in a user", () => {
-    const token = "gdgdhdj";
+    const data = {user_token: "gdgdhdj"};
     const action = {
       type: "LOGIN",
-      payload: token
+      payload: data.user_token
     };
     expect(login({}, action)) !== initialState;
-    expect(login({email: "", password:""})).toBeTruthy();
-    expect(loginChecker({}, action)).toEqual({token});
-
+    expect(login({ email: "", password: "" })).toBeTruthy();
+    expect(loginChecker({}, action)).toEqual({  });
   });
 });
 
@@ -194,8 +193,8 @@ describe("login reducer ", () => {
       payload: errors
     };
     expect(login({}, action2)) !== initialState;
-    expect(login({email: "", password:""})).toBeTruthy();
-    expect(loginChecker({}, action2)).toEqual({errors});
+    expect(login({ email: "", password: "" })).toBeTruthy();
 
+    expect(loginChecker({}, action2)).toEqual({ errors });
   });
 });

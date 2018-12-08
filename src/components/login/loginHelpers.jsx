@@ -1,3 +1,4 @@
+/* eslint-disable no-else-return */
 /* eslint-disable array-callback-return */
 /* eslint-disable no-use-before-define */
 /* eslint-disable prefer-destructuring */
