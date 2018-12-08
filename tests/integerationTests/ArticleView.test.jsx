@@ -36,9 +36,10 @@ describe("<SingleArticle/>", () => {
         article: {
           body: "this a test article", description:"Ever wonder how", id: 20
         }
-      }
+      },
+      // followStatusReducer: {results: []}
     };
-    const wrapper = mount(
+    const wrapper = shallow(
       <Provider store={store}>
         <Router>
           <SingleArticle

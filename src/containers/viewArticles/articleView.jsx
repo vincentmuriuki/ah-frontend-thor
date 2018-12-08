@@ -1,7 +1,9 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import Moment from "react-moment";
 import { SingleArticleAction } from "../../actions/singleArticleAction";
+import Follow, {RelatedArticles} from "../../components/Follow";
 
 export const SocialMediaSection = () => (
   // <!--Grid column-->
@@ -79,6 +81,34 @@ export const ArticleSection = ({
   </div>
 );
 
+
+export const  Aside = () => {
+  return (
+    <div className="col-md-4 mb-4">
+
+      {/* <!--Card: Jumbotron--> */}
+      <Follow />
+      {/* <!--/.Card : Dynamic content wrapper--> */}
+
+      {/* <!--Card--> */}
+      <div className="card mb-4 wow fadeIn">
+
+        <div className="card-header">Related articles</div>
+
+        {/* <!--Card content--> */}
+
+        <RelatedArticles />
+
+      </div>
+      {/* <!--/.Card--> */}
+
+    </div>
+  );
+};
+
+
+
+
 export class SingleArticle extends Component {
   componentDidMount() {
     const id = localStorage.getItem("articleId");
@@ -104,6 +134,7 @@ export class SingleArticle extends Component {
                   author={author}
                   readTime={article.read_time}
                 />
+                <Aside />
               </div>
             </section>
           </main>
@@ -112,6 +143,7 @@ export class SingleArticle extends Component {
     );
   }
 }
+
 
 export const mapStateToProps = state => ({ Article: state.article });
 

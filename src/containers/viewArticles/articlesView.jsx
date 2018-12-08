@@ -75,6 +75,7 @@ export class ArticleDetails extends Component {
   onClickHandler = (id, articleAuthor) => event => {
     localStorage.setItem("articleId", id);
     localStorage.setItem("articleAuthor", articleAuthor);
+    // localStorage.setItem()
   };
 
 

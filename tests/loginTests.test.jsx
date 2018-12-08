@@ -116,7 +116,7 @@ describe("test the login container", () => {
     .getElementsByTagName("head")[0]
     .appendChild(document.createElement("script"));
   const fakeEvent = { preventDefault: () => {}, target: { value: "me@mail.com" } };
-  const wrapper = shallow(<Provider><Login store={storee} {...props} auth={props.auth} options={props.options} /></Provider>);
+  const wrapper = shallow(<Provider store={storee}><Login {...props} auth={props.auth} options={props.options} /></Provider>);
   wrapper.setState({ options:props.options, email:"sdd@fox.com", password: "wyryrh"});
   wrapper.setProps({loginUser:jest.fn()});
   const formWrapper = wrapper.dive().find("Form");
