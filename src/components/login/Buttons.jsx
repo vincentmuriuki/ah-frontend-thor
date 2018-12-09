@@ -32,10 +32,10 @@ const Buttons = (props) => {
         </button>
       </nav>
 
-      <p>
-        Not a member?
-        <a href="">Register</a>
+      <p>Not a member?
+        <a href="/signup">Register</a>
       </p>
+      <p>Or signin with</p>
 
       {renderSocialAuthButtons({ facebook, twitter, google })}
     </React.Fragment>;

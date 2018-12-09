@@ -1,8 +1,8 @@
 import React from "react";
 
 const Home = () => (
-  <div>
-    <h3>Author's Haven</h3>
+  <div className="container">
+    This is Home!  
   </div>
 );
 export default Home;

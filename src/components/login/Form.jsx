@@ -3,6 +3,7 @@
 import React from "react";
 import Buttons from "./Buttons";
 import Input from "./Input";
+import Home  from "./SocialButtons";
 
 
 const Form = ({ onSubmit, auth, onChangeEmail, onChangePassword , options}) => {
@@ -36,6 +37,7 @@ const Form = ({ onSubmit, auth, onChangeEmail, onChangePassword , options}) => {
                 <Buttons options={options}/>
 
               </form>
+              <Home />
             </div>
 
           </div>
