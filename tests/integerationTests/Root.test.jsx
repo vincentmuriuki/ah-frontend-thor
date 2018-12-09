@@ -1,10 +1,10 @@
-import { shallow } from "enzyme";
+import Enzyme, { shallow, mount } from "enzyme";
 import React from "react";
-import AppRouter from "../../src/components/AppRouter";
+import Root from "../../src/components/Root";
 
 describe("Tests the mounted Footer component", () => {
   it("tests the footer of the app against the snapshot", () => {
-    const component = shallow(<AppRouter />);
+    const component = shallow(<Root />);
     expect(component).toMatchSnapshot();
   });
 });

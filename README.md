@@ -29,6 +29,11 @@ by leveraging the modern web.
 -   Users can favorite article.
 -   Users can follow article authors.
 
+# How to install the project dependencies
+- The package manager used for this project is `Yarn`
+- To install ` yarn ` visit the offical docs [Yarn](https://yarnpkg.com/en/docs/install#mac-stable) .
+- After installing yarn, install the dependencies using the command `yarn install `
+
 # How to run the project locally
 
 -   Clone this project using `git clone https://github.com/andela/ah-frontend-thor.git`
@@ -36,6 +41,14 @@ by leveraging the modern web.
 -   Install the project dependencies using `yarn install` in the project root.
 -   Run the project locally in development mode using `yarn start:dev`
 -   It will open the default browser and start the app.
+-   You can test the app by clicking the through the url.
+
+# Team code of conduct.
+- Use es6 features(arrow functions and classes) for more concise code.
+- All folder names are supposed to be lowercase
+- Components names are supposed to follow the pascal case naming convention
+- Writing unitests for the one's code is highly encouraged.
+
 
 # How to run the tests
 

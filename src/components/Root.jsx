@@ -1,22 +1,16 @@
-import React, { Component } from "react";
+import React from "react";
 
 import Header from "./Header";
+import Footer from "./Footer";
 
-class Root extends Component {
-	render() {
-		return (
-			<div>
-				<Header />
-				<div className="jumbotron">
-					<div className="container">
-						<div className="row">
-							<div className="col-md-6" />
-							{this.props.children}
-						</div>
-					</div>
-				</div>
-			</div>
-		);
-	}
+function Root(props) {
+  return (
+    <div>
+      <Header />
+      {props.children}
+      <Footer />
+    </div>
+  );
 }
+
 export default Root;
