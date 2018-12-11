@@ -58,6 +58,10 @@ ShallowWrapper {
                 component={[Function]}
                 path="/signout"
               />
+              <Route
+                component={[Function]}
+                path="/post_article"
+              />
             </div>
           </Root>
         </React.Fragment>
@@ -116,6 +120,10 @@ ShallowWrapper {
                 component={[Function]}
                 path="/signout"
               />
+              <Route
+                component={[Function]}
+                path="/post_article"
+              />
             </div>
           </Root>
         </React.Fragment>,
@@ -165,6 +173,10 @@ ShallowWrapper {
                 component={[Function]}
                 path="/signout"
               />
+              <Route
+                component={[Function]}
+                path="/post_article"
+              />
             </div>
           </Root>,
         },
@@ -212,6 +224,10 @@ ShallowWrapper {
                 component={[Function]}
                 path="/signout"
               />
+              <Route
+                component={[Function]}
+                path="/post_article"
+              />
             </div>,
           },
           "ref": null,
@@ -257,6 +273,10 @@ ShallowWrapper {
                 <Route
                   component={[Function]}
                   path="/signout"
+                />,
+                <Route
+                  component={[Function]}
+                  path="/post_article"
                 />,
               ],
             },
@@ -371,6 +391,18 @@ ShallowWrapper {
                 "rendered": null,
                 "type": [Function],
               },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "component": [Function],
+                  "path": "/post_article",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
             ],
             "type": "div",
           },
@@ -428,6 +460,10 @@ ShallowWrapper {
                 <Route
                   component={[Function]}
                   path="/signout"
+                />
+                <Route
+                  component={[Function]}
+                  path="/post_article"
                 />
               </div>
             </Root>
@@ -487,6 +523,10 @@ ShallowWrapper {
                   component={[Function]}
                   path="/signout"
                 />
+                <Route
+                  component={[Function]}
+                  path="/post_article"
+                />
               </div>
             </Root>
           </React.Fragment>,
@@ -536,6 +576,10 @@ ShallowWrapper {
                   component={[Function]}
                   path="/signout"
                 />
+                <Route
+                  component={[Function]}
+                  path="/post_article"
+                />
               </div>
             </Root>,
           },
@@ -583,6 +627,10 @@ ShallowWrapper {
                   component={[Function]}
                   path="/signout"
                 />
+                <Route
+                  component={[Function]}
+                  path="/post_article"
+                />
               </div>,
             },
             "ref": null,
@@ -628,6 +676,10 @@ ShallowWrapper {
                   <Route
                     component={[Function]}
                     path="/signout"
+                  />,
+                  <Route
+                    component={[Function]}
+                    path="/post_article"
                   />,
                 ],
               },
@@ -737,6 +789,18 @@ ShallowWrapper {
                   "props": Object {
                     "component": [Function],
                     "path": "/signout",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "component": [Function],
+                    "path": "/post_article",
                   },
                   "ref": null,
                   "rendered": null,

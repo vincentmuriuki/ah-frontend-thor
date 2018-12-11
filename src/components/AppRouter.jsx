@@ -1,11 +1,10 @@
 /* eslint-disable import/no-named-as-default */
 /* eslint-disable react/jsx-indent */
-import { Route, BrowserRouter as Router } from "react-router-dom";
-
-import { Provider } from "react-redux";
-import store from "../store";
-
 import React from "react";
+import { Route, BrowserRouter as Router } from "react-router-dom";
+import { Provider } from "react-redux";
+
+import store from "../store";
 import Home from "./Home";
 import Login from "../containers/Login";
 import signUp from "./signup/SignUp";
@@ -17,6 +16,8 @@ import Profile from "../containers/Profile/Profile";
 import EditProfile from "../containers/Profile/EditProfile";
 import "../assets/css/styles.css";
 import SignOut from "./SignOut";
+import PostArticle from "./article/PostArticle";
+
 const AppRouter = () => (
   <Provider store={store}>
     <Router>
@@ -32,6 +33,7 @@ const AppRouter = () => (
             <Route path="/profile" component={Profile} />
             <Route path="/editprofile" component={EditProfile} />
             <Route path="/signout" component={SignOut} />
+            <Route path="/post_article" component={PostArticle} />
           </div>
         </Root>
       </React.Fragment>
