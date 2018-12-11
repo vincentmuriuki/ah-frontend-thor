@@ -9,6 +9,8 @@ import Login from "../containers/Login";
 import signUp from "./signup/SignUp";
 import Root from "./Root";
 import store from "../store";
+import ForgotPasswordPage from "../containers/resetPassword/ForgotPasswordContainer";
+import ChangePasswordPage from "../containers/resetPassword/ChangePasswordContainer";
 
 const AppRouter = () => (
   <Provider store={store}>
@@ -20,6 +22,8 @@ const AppRouter = () => (
             <Route path="/login" component={Login} />
             <Route path="/signup" component={signUp} />
             <Route path="/home" component={Home} />
+            <Route path="/forgot_password" component={ForgotPasswordPage} />
+            <Route path="/update_password" component={ChangePasswordPage} />
           </div>
         </Root>
       </React.Fragment>

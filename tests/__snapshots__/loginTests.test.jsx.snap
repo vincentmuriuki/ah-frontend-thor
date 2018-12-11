@@ -46,7 +46,7 @@ ShallowWrapper {
             </label>
             <a
               className="btn btn-outline-info"
-              href=""
+              href="/forgot_password"
             >
               Forgot password?
             </a>
@@ -94,7 +94,7 @@ ShallowWrapper {
             </label>
             <a
               className="btn btn-outline-info"
-              href=""
+              href="/forgot_password"
             >
               Forgot password?
             </a>
@@ -114,7 +114,7 @@ ShallowWrapper {
               </label>,
               <a
                 className="btn btn-outline-info"
-                href=""
+                href="/forgot_password"
               >
                 Forgot password?
               </a>,
@@ -142,7 +142,7 @@ ShallowWrapper {
               "props": Object {
                 "children": "Forgot password?",
                 "className": "btn btn-outline-info",
-                "href": "",
+                "href": "/forgot_password",
               },
               "ref": null,
               "rendered": "Forgot password?",
@@ -238,7 +238,7 @@ ShallowWrapper {
               </label>
               <a
                 className="btn btn-outline-info"
-                href=""
+                href="/forgot_password"
               >
                 Forgot password?
               </a>
@@ -286,7 +286,7 @@ ShallowWrapper {
               </label>
               <a
                 className="btn btn-outline-info"
-                href=""
+                href="/forgot_password"
               >
                 Forgot password?
               </a>
@@ -306,7 +306,7 @@ ShallowWrapper {
                 </label>,
                 <a
                   className="btn btn-outline-info"
-                  href=""
+                  href="/forgot_password"
                 >
                   Forgot password?
                 </a>,
@@ -334,7 +334,7 @@ ShallowWrapper {
                 "props": Object {
                   "children": "Forgot password?",
                   "className": "btn btn-outline-info",
-                  "href": "",
+                  "href": "/forgot_password",
                 },
                 "ref": null,
                 "rendered": "Forgot password?",
