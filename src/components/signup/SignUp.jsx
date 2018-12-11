@@ -64,7 +64,7 @@ export const mapStateToProps = state =>
     success: state.signUpReducer.success
   });
 
-const mapDispatchToProps = dispatch => ({
+export const mapDispatchToProps = dispatch => ({
   signupAction: data => dispatch(SignUpAction(data))
 });
 

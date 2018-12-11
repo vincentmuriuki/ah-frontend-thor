@@ -1,7 +1,7 @@
 import React from "react";
 import { mount } from "enzyme";
 
-import { SignUp, mapStateToProps } from "../../src/components/Signup/SignUp";
+import { SignUp, mapStateToProps } from "../../src/components/signup/SignUp";
 
 describe("Renders the signup component without redux", () => {
   it("should render signUp component", () => {

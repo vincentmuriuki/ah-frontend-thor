@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = () => (
   <div>
-    Author's Haven
+    <h3>Author's Haven</h3>
   </div>
 );
 export default Home;
