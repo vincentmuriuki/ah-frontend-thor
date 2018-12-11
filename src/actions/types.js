@@ -1,8 +1,9 @@
 export const SIGNUP = "SIGNUP_ACTION";
 export const LOADING = "LOADING_ACTION";
-export const LOGIN = "LOGIN";
 export const LOGIN_ERROR = "LOGIN_ERROR";
 export const FETCH_PROFILE_REQUEST = "FETCH_PROFILE_REQUEST";
 export const FETCH_PROFILE_SUCCESS = "FETCH_PROFILE_SUCCESS";
 export const EDIT_PROFILE = "EDIT_PROFILE";
 export const SAVE_IMAGE = "SAVE_IMAGE";
+export const SOCIAL_LOGIN = "SOCIAL_LOGIN";
+export const LOGIN = "LOGIN";

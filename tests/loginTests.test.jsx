@@ -5,54 +5,49 @@ import React from "react";
 import expect from "expect";
 import { MemoryRouter } from "react-router-dom";
 import configureMockStore from "redux-mock-store";
+import { Provider } from "react-redux";
 import thunk from "redux-thunk";
 import Button from "../src/components/login/Buttons";
 import Forms from "../src/components/login/Form";
 import Header from "../src/components/Header";
 import Home from "../src/components/Home";
 import Inputs from "../src/components/login/Input";
-import {
-  Login,
-  mapStateToProps,
-  mapDispatchToProps,
-  optionsObject
-} from "../src/containers/Login";
+import { Login, mapStateToProps, mapDispatchToProps, optionsObject} from "../src/containers/Login";
 import SocialAuthButton from "../src/components/login/SocialAuthButtons";
 import login from "../src/actions/loginActions";
 import loginChecker from "../src/reducers/loginReducer";
 
-const mockStore = configureMockStore([thunk]);
 
 it("it should render component", () => {
   shallow(
     <MemoryRouter>
       <Login onChange={jest.fn} onSubmit={jest.fn} />
-    </MemoryRouter>
+    </MemoryRouter>,
   );
 });
 
 const props = {
   auth: {
-    errors: "User with this name or password not found !"
+    "errors": "User with this name or password not found !"
   },
-  onSubmit() {},
-  onChangeEmail() {},
-  onChangePassword() {},
+  onSubmit(){},
+  loginUser: jest.fn(),
+  onChangePassword(){},
   type: "qwerty",
   id: "div",
   innerHtml: "qwerty",
   options: {
-    facebook: {
-      className1: "btn-floating btn-fb btn-lg",
-      className2: "fa fa-facebook"
+    "facebook": {
+      "className1": "btn-floating btn-fb btn-lg",
+      "className2": "fa fa-facebook"
     },
-    twitter: {
-      className1: "btn-floating btn-tw btn-lg",
-      className2: "fa fa-twitter"
+    "twitter": {
+      "className1": "btn-floating btn-tw btn-lg",
+      "className2": "fa fa-twitter"
     },
-    google: {
-      className1: "btn-floating btn-gplus btn-lg",
-      className2: "fa fa-google-plus"
+    "google": {
+      "className1": "btn-floating btn-gplus btn-lg",
+      "className2": "fa fa-google-plus"
     }
   }
 };
@@ -107,32 +102,39 @@ describe("<Button />", () => {
 });
 
 describe("test the login container", () => {
-  beforeEach(() => {});
+  const middlewares = [thunk];
+  const mockStoree = configureMockStore(middlewares);
+  const initialUserState = {
+    social: {
+      isLoggedIn: false,
+      user: null,
+      token: null
+    }
+  };
+  const storee = mockStoree({ ...initialUserState });
+  document
+    .getElementsByTagName("head")[0]
+    .appendChild(document.createElement("script"));
+  const fakeEvent = { preventDefault: () => {}, target: { value: "me@mail.com" } };
+  const wrapper = shallow(<Provider><Login store={storee} {...props} auth={props.auth} options={props.options} /></Provider>);
+  wrapper.setState({ options:props.options, email:"sdd@fox.com", password: "wyryrh"});
+  wrapper.setProps({loginUser:jest.fn()});
+  const formWrapper = wrapper.dive().find("Form");
   it("should mount the login component", () => {
-    const wrapper = mount(<Login auth={props.auth} options={props.options} />);
-    wrapper.setState({
-      options: props.options,
-      email: "sdd@fox.com",
-      password: "wyryrh"
-    });
-    wrapper.setProps({
-      auth: props.auth,
-      onChangeEmail: props.onChangeEmail,
-      onChangePassword: props.onChangePassword,
-      onSubmit: props.onSubmit,
-      options: props.options
-    });
-    const instance = wrapper.instance();
-    wrapper.setProps({ loginUser: jest.fn() });
-    const loginUser = instance.loginUser;
-    const fakeEvent = { preventDefault: () => {} };
-    loginUser(fakeEvent);
-
-    const email = wrapper.find("input#materialLoginFormEmail");
-
-    email.simulate("change");
-    const password = wrapper.find("input#materialLoginFormPassword");
-    password.simulate("change");
+    
+    formWrapper.dive().find("Input").first().simulate("change", fakeEvent);
+    formWrapper.dive().find("Input").last().simulate("change", fakeEvent);
+    formWrapper.simulate("submit", fakeEvent);
+   
+  });
+  it("smulate change on first input field", () => {
+    formWrapper.dive().find("Input").first().simulate("change", fakeEvent);
+  });
+  it("smulate change on second input field", () => {
+    formWrapper.dive().find("Input").last().simulate("change", fakeEvent);
+  });
+  it("smulate change on submit button", () => {
+    formWrapper.simulate("submit", fakeEvent);
   });
 });
 
@@ -144,17 +146,16 @@ describe("Login", () => {
       options: optionsObject
     };
     expect(mapStateToProps(state).options).toEqual(optionsObject);
+    
   });
 
   it("Should pass action to props on submit", () => {
     const dispatch = jest.fn();
-    mapDispatchToProps(dispatch).loginUser({
-      email: "cdvx@fox.com",
-      password: "hgjfjv"
-    });
-    expect(dispatch.mock.calls[0][0]).toBeTruthy();
+    mapDispatchToProps(dispatch).loginUser({email:"cdvx@fox.com", password:"hgjfjv"});
+    expect((dispatch.mock.calls[0][0])).toBeTruthy();
   });
 });
+
 
 describe("<Inputs />", () => {
   describe("onChange()", () => {
@@ -170,7 +171,7 @@ describe("<Inputs />", () => {
   });
 });
 
-const initialState = { errors: "", user: null };
+const initialState = {errors:"", user: null};
 describe("login reducer ", () => {
   test("tests  log in a user", () => {
     const token = "gdgdhdj";
@@ -179,8 +180,9 @@ describe("login reducer ", () => {
       payload: token
     };
     expect(login({}, action)) !== initialState;
-    expect(login({ email: "", password: "" })).toBeTruthy();
-    expect(loginChecker({}, action)).toEqual({ token });
+    expect(login({email: "", password:""})).toBeTruthy();
+    expect(loginChecker({}, action)).toEqual({token});
+
   });
 });
 
@@ -192,7 +194,8 @@ describe("login reducer ", () => {
       payload: errors
     };
     expect(login({}, action2)) !== initialState;
-    expect(login({ email: "", password: "" })).toBeTruthy();
-    expect(loginChecker({}, action2)).toEqual({ errors });
+    expect(login({email: "", password:""})).toBeTruthy();
+    expect(loginChecker({}, action2)).toEqual({errors});
+
   });
 });

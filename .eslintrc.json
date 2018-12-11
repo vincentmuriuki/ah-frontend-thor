@@ -10,14 +10,15 @@
 		"ecmaFeatures": {
 			"jsx": true
 		},
-		"ecmaVersion": 2018,
-		"sourceType": "module"
+    "ecmaVersion": 2018,
+    "sourceType": "module"
 	},
 	"plugins": ["react", "eslint-plugin-github"],
 	"rules": {
 		"indent": ["error", 2],
 		"linebreak-style": ["error", "unix"],
 		"quotes": ["error", "double"],
-		"semi": ["error", "always"]
+		"semi": ["error", "always"],
+		"object-shorthand": [0]
 	}
 }
