@@ -7,9 +7,9 @@ const Header = () => (
   <header>
     <nav className="navbar fixed-top navbar-expand-lg navbar-dark unique-color-dark scrolling-navbar">
       <div className="container">
-        <a className="navbar-brand" href="/index.html">
+        <NavLink to="/home" className="navbar-brand">
           <strong>Author's Haven</strong>
-        </a>
+        </NavLink>
         <button
           className="navbar-toggler"
           type="button"
