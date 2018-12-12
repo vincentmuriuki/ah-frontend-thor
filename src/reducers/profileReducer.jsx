@@ -16,7 +16,8 @@ export default function(state = initialState, action) {
 				...state,
 				user: action.payload
 			};
-		case EDIT_PROFILE:
+    case EDIT_PROFILE:
+      alert("success", {}, null, null, "/profile")
 			return {
 				...state,
 				item: action.payload

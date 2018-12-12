@@ -1267,8 +1267,7 @@ ShallowWrapper {
                   className="nav-link"
                   href="articles.html"
                 >
-                  Articles
-                   
+                  Articles 
                   <span
                     className="sr-only"
                   />
@@ -1319,15 +1318,20 @@ ShallowWrapper {
                 >
                   Signup
                 </NavLink>
+              </li>
+<<<<<<< HEAD
+=======
+              <li>
                 <NavLink
                   activeClassName="active"
                   aria-current="page"
                   className="navbar-brand"
                   to="/Profile"
                 >
-                  Profile
+                  <Connect(ProfileImage) />
                 </NavLink>
               </li>
+>>>>>>> Test access to environmental variables in heroku
             </ul>
           </div>
         </div>
@@ -1377,8 +1381,7 @@ ShallowWrapper {
                   className="nav-link"
                   href="articles.html"
                 >
-                  Articles
-                   
+                  Articles 
                   <span
                     className="sr-only"
                   />
@@ -1429,15 +1432,20 @@ ShallowWrapper {
                 >
                   Signup
                 </NavLink>
+              </li>
+<<<<<<< HEAD
+=======
+              <li>
                 <NavLink
                   activeClassName="active"
                   aria-current="page"
                   className="navbar-brand"
                   to="/Profile"
                 >
-                  Profile
+                  <Connect(ProfileImage) />
                 </NavLink>
               </li>
+>>>>>>> Test access to environmental variables in heroku
             </ul>
           </div>
         </div>,
@@ -1485,8 +1493,7 @@ ShallowWrapper {
                     className="nav-link"
                     href="articles.html"
                   >
-                    Articles
-                     
+                    Articles 
                     <span
                       className="sr-only"
                     />
@@ -1537,15 +1544,20 @@ ShallowWrapper {
                   >
                     Signup
                   </NavLink>
+                </li>
+<<<<<<< HEAD
+=======
+                <li>
                   <NavLink
                     activeClassName="active"
                     aria-current="page"
                     className="navbar-brand"
                     to="/Profile"
                   >
-                    Profile
+                    <Connect(ProfileImage) />
                   </NavLink>
                 </li>
+>>>>>>> Test access to environmental variables in heroku
               </ul>
             </div>,
           ],
@@ -1624,8 +1636,7 @@ ShallowWrapper {
                       className="nav-link"
                       href="articles.html"
                     >
-                      Articles
-                       
+                      Articles 
                       <span
                         className="sr-only"
                       />
@@ -1676,15 +1687,20 @@ ShallowWrapper {
                     >
                       Signup
                     </NavLink>
+                  </li>
+<<<<<<< HEAD
+=======
+                  <li>
                     <NavLink
                       activeClassName="active"
                       aria-current="page"
                       className="navbar-brand"
                       to="/Profile"
                     >
-                      Profile
+                      <Connect(ProfileImage) />
                     </NavLink>
                   </li>
+>>>>>>> Test access to environmental variables in heroku
                 </ul>,
               ],
               "className": "collapse navbar-collapse",
@@ -1704,8 +1720,7 @@ ShallowWrapper {
                       className="nav-link"
                       href="articles.html"
                     >
-                      Articles
-                       
+                      Articles 
                       <span
                         className="sr-only"
                       />
@@ -1723,8 +1738,7 @@ ShallowWrapper {
                       className="nav-link"
                       href="articles.html"
                     >
-                      Articles
-                       
+                      Articles 
                       <span
                         className="sr-only"
                       />
@@ -1738,8 +1752,7 @@ ShallowWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "children": Array [
-                        "Articles",
-                        " ",
+                        "Articles ",
                         <span
                           className="sr-only"
                         />,
@@ -1749,8 +1762,7 @@ ShallowWrapper {
                     },
                     "ref": null,
                     "rendered": Array [
-                      "Articles",
-                      " ",
+                      "Articles ",
                       Object {
                         "instance": null,
                         "key": undefined,
@@ -1816,15 +1828,20 @@ ShallowWrapper {
                       >
                         Signup
                       </NavLink>
+                    </li>,
+<<<<<<< HEAD
+=======
+                    <li>
                       <NavLink
                         activeClassName="active"
                         aria-current="page"
                         className="navbar-brand"
                         to="/Profile"
                       >
-                        Profile
+                        <Connect(ProfileImage) />
                       </NavLink>
                     </li>,
+>>>>>>> Test access to environmental variables in heroku
                   ],
                   "className": "navbar-nav ml-auto",
                 },
@@ -1942,61 +1959,77 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": Array [
-                        <NavLink
-                          activeClassName="active"
-                          aria-current="page"
-                          className="navbar-brand"
-                          to="/signup"
-                        >
-                          Signup
-                        </NavLink>,
-                        <NavLink
-                          activeClassName="active"
-                          aria-current="page"
-                          className="navbar-brand"
-                          to="/Profile"
-                        >
-                          Profile
-                        </NavLink>,
-                      ],
+                      "children": <NavLink
+                        activeClassName="active"
+                        aria-current="page"
+                        className="navbar-brand"
+                        to="/signup"
+                      >
+                        Signup
+                      </NavLink>,
                       "className": "nav-item",
                     },
                     "ref": null,
-                    "rendered": Array [
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "function",
-                        "props": Object {
-                          "activeClassName": "active",
-                          "aria-current": "page",
-                          "children": "Signup",
-                          "className": "navbar-brand",
-                          "to": "/signup",
-                        },
-                        "ref": null,
-                        "rendered": "Signup",
-                        "type": [Function],
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "activeClassName": "active",
+                        "aria-current": "page",
+                        "children": "Signup",
+                        "className": "navbar-brand",
+                        "to": "/signup",
                       },
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "function",
-                        "props": Object {
-                          "activeClassName": "active",
-                          "aria-current": "page",
-                          "children": "Profile",
-                          "className": "navbar-brand",
-                          "to": "/Profile",
-                        },
-                        "ref": null,
-                        "rendered": "Profile",
-                        "type": [Function],
-                      },
-                    ],
+                      "ref": null,
+                      "rendered": "Signup",
+                      "type": [Function],
+                    },
                     "type": "li",
                   },
+<<<<<<< HEAD
+=======
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <NavLink
+                        activeClassName="active"
+                        aria-current="page"
+                        className="navbar-brand"
+                        to="/Profile"
+                      >
+                        <Connect(ProfileImage) />
+                      </NavLink>,
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "activeClassName": "active",
+                        "aria-current": "page",
+                        "children": <Connect(ProfileImage) />,
+                        "className": "navbar-brand",
+                        "to": "/Profile",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {},
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      "type": [Function],
+                    },
+                    "type": "li",
+                  },
+>>>>>>> Test access to environmental variables in heroku
                 ],
                 "type": "ul",
               },
@@ -2057,8 +2090,7 @@ ShallowWrapper {
                     className="nav-link"
                     href="articles.html"
                   >
-                    Articles
-                     
+                    Articles 
                     <span
                       className="sr-only"
                     />
@@ -2109,15 +2141,20 @@ ShallowWrapper {
                   >
                     Signup
                   </NavLink>
+                </li>
+<<<<<<< HEAD
+=======
+                <li>
                   <NavLink
                     activeClassName="active"
                     aria-current="page"
                     className="navbar-brand"
                     to="/Profile"
                   >
-                    Profile
+                    <Connect(ProfileImage) />
                   </NavLink>
                 </li>
+>>>>>>> Test access to environmental variables in heroku
               </ul>
             </div>
           </div>
@@ -2167,8 +2204,7 @@ ShallowWrapper {
                     className="nav-link"
                     href="articles.html"
                   >
-                    Articles
-                     
+                    Articles 
                     <span
                       className="sr-only"
                     />
@@ -2219,15 +2255,20 @@ ShallowWrapper {
                   >
                     Signup
                   </NavLink>
+                </li>
+<<<<<<< HEAD
+=======
+                <li>
                   <NavLink
                     activeClassName="active"
                     aria-current="page"
                     className="navbar-brand"
                     to="/Profile"
                   >
-                    Profile
+                    <Connect(ProfileImage) />
                   </NavLink>
                 </li>
+>>>>>>> Test access to environmental variables in heroku
               </ul>
             </div>
           </div>,
@@ -2275,8 +2316,7 @@ ShallowWrapper {
                       className="nav-link"
                       href="articles.html"
                     >
-                      Articles
-                       
+                      Articles 
                       <span
                         className="sr-only"
                       />
@@ -2327,15 +2367,20 @@ ShallowWrapper {
                     >
                       Signup
                     </NavLink>
+                  </li>
+<<<<<<< HEAD
+=======
+                  <li>
                     <NavLink
                       activeClassName="active"
                       aria-current="page"
                       className="navbar-brand"
                       to="/Profile"
                     >
-                      Profile
+                      <Connect(ProfileImage) />
                     </NavLink>
                   </li>
+>>>>>>> Test access to environmental variables in heroku
                 </ul>
               </div>,
             ],
@@ -2414,8 +2459,7 @@ ShallowWrapper {
                         className="nav-link"
                         href="articles.html"
                       >
-                        Articles
-                         
+                        Articles 
                         <span
                           className="sr-only"
                         />
@@ -2466,15 +2510,20 @@ ShallowWrapper {
                       >
                         Signup
                       </NavLink>
+                    </li>
+<<<<<<< HEAD
+=======
+                    <li>
                       <NavLink
                         activeClassName="active"
                         aria-current="page"
                         className="navbar-brand"
                         to="/Profile"
                       >
-                        Profile
+                        <Connect(ProfileImage) />
                       </NavLink>
                     </li>
+>>>>>>> Test access to environmental variables in heroku
                   </ul>,
                 ],
                 "className": "collapse navbar-collapse",
@@ -2494,8 +2543,7 @@ ShallowWrapper {
                         className="nav-link"
                         href="articles.html"
                       >
-                        Articles
-                         
+                        Articles 
                         <span
                           className="sr-only"
                         />
@@ -2513,8 +2561,7 @@ ShallowWrapper {
                         className="nav-link"
                         href="articles.html"
                       >
-                        Articles
-                         
+                        Articles 
                         <span
                           className="sr-only"
                         />
@@ -2528,8 +2575,7 @@ ShallowWrapper {
                       "nodeType": "host",
                       "props": Object {
                         "children": Array [
-                          "Articles",
-                          " ",
+                          "Articles ",
                           <span
                             className="sr-only"
                           />,
@@ -2539,8 +2585,7 @@ ShallowWrapper {
                       },
                       "ref": null,
                       "rendered": Array [
-                        "Articles",
-                        " ",
+                        "Articles ",
                         Object {
                           "instance": null,
                           "key": undefined,
@@ -2606,15 +2651,20 @@ ShallowWrapper {
                         >
                           Signup
                         </NavLink>
+                      </li>,
+<<<<<<< HEAD
+=======
+                      <li>
                         <NavLink
                           activeClassName="active"
                           aria-current="page"
                           className="navbar-brand"
                           to="/Profile"
                         >
-                          Profile
+                          <Connect(ProfileImage) />
                         </NavLink>
                       </li>,
+>>>>>>> Test access to environmental variables in heroku
                     ],
                     "className": "navbar-nav ml-auto",
                   },
@@ -2732,61 +2782,77 @@ ShallowWrapper {
                       "key": undefined,
                       "nodeType": "host",
                       "props": Object {
-                        "children": Array [
-                          <NavLink
-                            activeClassName="active"
-                            aria-current="page"
-                            className="navbar-brand"
-                            to="/signup"
-                          >
-                            Signup
-                          </NavLink>,
-                          <NavLink
-                            activeClassName="active"
-                            aria-current="page"
-                            className="navbar-brand"
-                            to="/Profile"
-                          >
-                            Profile
-                          </NavLink>,
-                        ],
+                        "children": <NavLink
+                          activeClassName="active"
+                          aria-current="page"
+                          className="navbar-brand"
+                          to="/signup"
+                        >
+                          Signup
+                        </NavLink>,
                         "className": "nav-item",
                       },
                       "ref": null,
-                      "rendered": Array [
-                        Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "function",
-                          "props": Object {
-                            "activeClassName": "active",
-                            "aria-current": "page",
-                            "children": "Signup",
-                            "className": "navbar-brand",
-                            "to": "/signup",
-                          },
-                          "ref": null,
-                          "rendered": "Signup",
-                          "type": [Function],
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "activeClassName": "active",
+                          "aria-current": "page",
+                          "children": "Signup",
+                          "className": "navbar-brand",
+                          "to": "/signup",
                         },
-                        Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "function",
-                          "props": Object {
-                            "activeClassName": "active",
-                            "aria-current": "page",
-                            "children": "Profile",
-                            "className": "navbar-brand",
-                            "to": "/Profile",
-                          },
-                          "ref": null,
-                          "rendered": "Profile",
-                          "type": [Function],
-                        },
-                      ],
+                        "ref": null,
+                        "rendered": "Signup",
+                        "type": [Function],
+                      },
                       "type": "li",
                     },
+<<<<<<< HEAD
+=======
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <NavLink
+                          activeClassName="active"
+                          aria-current="page"
+                          className="navbar-brand"
+                          to="/Profile"
+                        >
+                          <Connect(ProfileImage) />
+                        </NavLink>,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "activeClassName": "active",
+                          "aria-current": "page",
+                          "children": <Connect(ProfileImage) />,
+                          "className": "navbar-brand",
+                          "to": "/Profile",
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {},
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": [Function],
+                      },
+                      "type": "li",
+                    },
+>>>>>>> Test access to environmental variables in heroku
                   ],
                   "type": "ul",
                 },
