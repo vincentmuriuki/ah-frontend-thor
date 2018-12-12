@@ -1,4 +1,3 @@
-import React from "react";
 import fetchMock from "fetch-mock";
 import configureMockStore from "redux-mock-store";
 import thunk from "redux-thunk";
@@ -7,7 +6,9 @@ const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);
 import {
   sendEmailLink,
-  changePassword
+  changePassword,
+  linkError,
+  updateError
 } from "../../src/actions/resetPasswordAction";
 
 const data = {
@@ -67,7 +68,7 @@ describe("resetPasswordActions", () => {
       201
     );
 
-    const expectedActions = [{ type: "API ACCESS SUCCESSFUL" }];
+    const expectedActions = [{ type: "UPDATE SUCCESSFUL" }];
     const store = mockStore({});
 
     return store
@@ -85,5 +86,14 @@ describe("resetPasswordActions", () => {
 
     store.dispatch(changePassword(token, data));
     expect(store.getActions()).toEqual([]);
+  });
+
+  it("email link error messages", () => {
+    linkError("User does not exist");
+    linkError("Check your email for the password reset link");
+  });
+  it("password update error messages", () => {
+    updateError("Token Expired. Update failed");
+    updateError("Password updated");
   });
 });
