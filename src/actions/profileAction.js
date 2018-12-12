@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 import {
   FETCH_PROFILE_REQUEST,
   FETCH_PROFILE_SUCCESS,
@@ -23,7 +24,7 @@ export const editProfile = profileData => dispatch => {
       });
     });
 };
-export const saveImage = (formData) => dispatch => {
+export const saveImage = (formData, imagePreview) => dispatch => {
   const CLOUDNARY_URL = process.env.CLOUDNARY_URL;
   return fetch(CLOUDNARY_URL, {
     method: "POST",
@@ -31,6 +32,7 @@ export const saveImage = (formData) => dispatch => {
   })
     .then(res => res.json())
     .then(response => {
+      imagePreview.src = response.secure_url;
       dispatch({
         type: SAVE_IMAGE,
         payload: response.secure_url

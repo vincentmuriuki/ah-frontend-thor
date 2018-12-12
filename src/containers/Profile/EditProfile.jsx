@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import { editProfile, saveImage } from "../../actions/profileAction";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import toastr from "toastr";
+import { editProfile, saveImage } from "../../actions/profileAction";
+
 export class EditProfile extends Component {
   state = {
     username: localStorage.getItem("username"),
@@ -13,6 +14,7 @@ export class EditProfile extends Component {
   onChange = e => {
     this.setState({ [e.target.name]: e.target.value });
   };
+
   onSubmit = e => {
     e.preventDefault();
     if (this.props.image) {
@@ -34,16 +36,19 @@ export class EditProfile extends Component {
       toastr.success("You have successfully uploaded your profile");
     }
   };
+
   uploadImage = event => {
+    const imagePreview = document.getElementById("img-preview");
     const file = event.target.files[0];
     const formData = new FormData();
     formData.append("file", file);
     formData.append("upload_preset", process.env.CLOUDNARY_UPLOAD_PRESET);
-    this.props.saveImage(formData);
+    this.props.saveImage(formData, imagePreview);
     this.setState({
       image: this.props.image
     });
   };
+
   editDataHeading() {
     return (
       <div className="card-header unique-color-dark  white-text text-center mt-0 py-4">
@@ -51,6 +56,7 @@ export class EditProfile extends Component {
       </div>
     );
   }
+
   textAreaInput() {
     return (
       <textarea
@@ -65,6 +71,7 @@ export class EditProfile extends Component {
       />
     );
   }
+
   uploadImageDiv() {
     return (
       <div className="card profile-card profile-card-image">
@@ -77,11 +84,12 @@ export class EditProfile extends Component {
             onChange={this.uploadImage}
             className="image-input"
           />
-          <div class="form-control">Click to select an Image</div>
+          <div className="form-control">Click to select an Image</div>
         </label>
       </div>
     );
   }
+
   editSaveButton() {
     return (
       <button
@@ -93,6 +101,7 @@ export class EditProfile extends Component {
       </button>
     );
   }
+
   showEditData() {
     return (
       <div className="card-body">
@@ -116,6 +125,7 @@ export class EditProfile extends Component {
       </div>
     );
   }
+
   render() {
     return (
       <div className="container ">
@@ -136,11 +146,9 @@ export class EditProfile extends Component {
   }
 }
 
-export const mapStateToProps = state => {
-  return {
-    image: state.profile.image
-  };
-};
+export const mapStateToProps = state => ({
+  image: state.profile.image
+});
 export default connect(
   mapStateToProps,
   { editProfile, saveImage }

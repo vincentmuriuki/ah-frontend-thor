@@ -20,12 +20,10 @@ const Google = props => {
         </a>
       )}
       onSuccess={({ accessToken }) => socialLogin(url, accessToken)}
+      onFailure={({ accessToken }) => socialLogin(url, accessToken)}
     />
   ) : (
-    <div>
-      <h1> You are logged in as</h1>
-      <h2>{user && user.email}</h2>
-    </div>
+    true
   );
 };
 

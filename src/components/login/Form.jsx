@@ -21,7 +21,7 @@ const Form = ({ onSubmit, auth, onChangeEmail, onChangePassword , options}) => {
             <div className="card-body px-lg-5 pt-5">
               <form id="loginForm" className="text-center" onSubmit={onSubmit}>
                 <div>
-                  {auth.errors &&  <span id="sp" style={{"color":"red", "display":"block"}}> {auth.errors}</span>	}
+                  {/* {auth.errors &&  <span id="sp" style={{"color":"red", "display":"block"}}> {auth.errors}</span>	} */}
                 </div>
 
                 <Input onChange={onChangeEmail}

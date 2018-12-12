@@ -85,7 +85,8 @@
 		"collectCoverage": true,
 		"collectCoverageFrom": [
 			"src/**/*.{js,jsx}",
-			"!src/index.jsx"
+      "!src/index.jsx",
+      "!src/reducers/rootReducer.js"
 		],
 		"coverageReporters": [
 			"lcov",

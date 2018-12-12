@@ -97,7 +97,7 @@ ShallowWrapper {
                               type="file"
                             />
                             <div
-                              class="form-control"
+                              className="form-control"
                             >
                               Click to select an Image
                             </div>
@@ -211,7 +211,7 @@ ShallowWrapper {
                               type="file"
                             />
                             <div
-                              class="form-control"
+                              className="form-control"
                             >
                               Click to select an Image
                             </div>
@@ -321,7 +321,7 @@ ShallowWrapper {
                               type="file"
                             />
                             <div
-                              class="form-control"
+                              className="form-control"
                             >
                               Click to select an Image
                             </div>
@@ -427,7 +427,7 @@ ShallowWrapper {
                               type="file"
                             />
                             <div
-                              class="form-control"
+                              className="form-control"
                             >
                               Click to select an Image
                             </div>
@@ -530,7 +530,7 @@ ShallowWrapper {
                                 type="file"
                               />
                               <div
-                                class="form-control"
+                                className="form-control"
                               >
                                 Click to select an Image
                               </div>
@@ -661,7 +661,7 @@ ShallowWrapper {
                                 type="file"
                               />
                               <div
-                                class="form-control"
+                                className="form-control"
                               >
                                 Click to select an Image
                               </div>
@@ -748,7 +748,7 @@ ShallowWrapper {
                                 type="file"
                               />
                               <div
-                                class="form-control"
+                                className="form-control"
                               >
                                 Click to select an Image
                               </div>
@@ -831,7 +831,7 @@ ShallowWrapper {
                                   type="file"
                                 />
                                 <div
-                                  class="form-control"
+                                  className="form-control"
                                 >
                                   Click to select an Image
                                 </div>
@@ -913,7 +913,7 @@ ShallowWrapper {
                                     type="file"
                                   />
                                   <div
-                                    class="form-control"
+                                    className="form-control"
                                   >
                                     Click to select an Image
                                   </div>
@@ -1060,7 +1060,7 @@ ShallowWrapper {
                                     type="file"
                                   />
                                   <div
-                                    class="form-control"
+                                    className="form-control"
                                   >
                                     Click to select an Image
                                   </div>
@@ -1091,7 +1091,7 @@ ShallowWrapper {
                                       type="file"
                                     />
                                     <div
-                                      class="form-control"
+                                      className="form-control"
                                     >
                                       Click to select an Image
                                     </div>
@@ -1128,7 +1128,7 @@ ShallowWrapper {
                                         type="file"
                                       />,
                                       <div
-                                        class="form-control"
+                                        className="form-control"
                                       >
                                         Click to select an Image
                                       </div>,
@@ -1159,7 +1159,7 @@ ShallowWrapper {
                                       "nodeType": "host",
                                       "props": Object {
                                         "children": "Click to select an Image",
-                                        "class": "form-control",
+                                        "className": "form-control",
                                       },
                                       "ref": null,
                                       "rendered": "Click to select an Image",
@@ -1338,7 +1338,7 @@ ShallowWrapper {
                                 type="file"
                               />
                               <div
-                                class="form-control"
+                                className="form-control"
                               >
                                 Click to select an Image
                               </div>
@@ -1452,7 +1452,7 @@ ShallowWrapper {
                                 type="file"
                               />
                               <div
-                                class="form-control"
+                                className="form-control"
                               >
                                 Click to select an Image
                               </div>
@@ -1562,7 +1562,7 @@ ShallowWrapper {
                                 type="file"
                               />
                               <div
-                                class="form-control"
+                                className="form-control"
                               >
                                 Click to select an Image
                               </div>
@@ -1668,7 +1668,7 @@ ShallowWrapper {
                                 type="file"
                               />
                               <div
-                                class="form-control"
+                                className="form-control"
                               >
                                 Click to select an Image
                               </div>
@@ -1771,7 +1771,7 @@ ShallowWrapper {
                                   type="file"
                                 />
                                 <div
-                                  class="form-control"
+                                  className="form-control"
                                 >
                                   Click to select an Image
                                 </div>
@@ -1902,7 +1902,7 @@ ShallowWrapper {
                                   type="file"
                                 />
                                 <div
-                                  class="form-control"
+                                  className="form-control"
                                 >
                                   Click to select an Image
                                 </div>
@@ -1989,7 +1989,7 @@ ShallowWrapper {
                                   type="file"
                                 />
                                 <div
-                                  class="form-control"
+                                  className="form-control"
                                 >
                                   Click to select an Image
                                 </div>
@@ -2072,7 +2072,7 @@ ShallowWrapper {
                                     type="file"
                                   />
                                   <div
-                                    class="form-control"
+                                    className="form-control"
                                   >
                                     Click to select an Image
                                   </div>
@@ -2154,7 +2154,7 @@ ShallowWrapper {
                                       type="file"
                                     />
                                     <div
-                                      class="form-control"
+                                      className="form-control"
                                     >
                                       Click to select an Image
                                     </div>
@@ -2301,7 +2301,7 @@ ShallowWrapper {
                                       type="file"
                                     />
                                     <div
-                                      class="form-control"
+                                      className="form-control"
                                     >
                                       Click to select an Image
                                     </div>
@@ -2332,7 +2332,7 @@ ShallowWrapper {
                                         type="file"
                                       />
                                       <div
-                                        class="form-control"
+                                        className="form-control"
                                       >
                                         Click to select an Image
                                       </div>
@@ -2369,7 +2369,7 @@ ShallowWrapper {
                                           type="file"
                                         />,
                                         <div
-                                          class="form-control"
+                                          className="form-control"
                                         >
                                           Click to select an Image
                                         </div>,
@@ -2400,7 +2400,7 @@ ShallowWrapper {
                                         "nodeType": "host",
                                         "props": Object {
                                           "children": "Click to select an Image",
-                                          "class": "form-control",
+                                          "className": "form-control",
                                         },
                                         "ref": null,
                                         "rendered": "Click to select an Image",
