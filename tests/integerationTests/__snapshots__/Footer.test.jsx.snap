@@ -110,8 +110,6 @@ ShallowWrapper {
                   Signup
                 </NavLink>
               </li>
-<<<<<<< HEAD
-=======
               <li>
                 <NavLink
                   activeClassName="active"
@@ -122,7 +120,6 @@ ShallowWrapper {
                   <Connect(ProfileImage) />
                 </NavLink>
               </li>
->>>>>>> Test access to environmental variables in heroku
             </ul>
           </div>
         </div>
@@ -224,8 +221,6 @@ ShallowWrapper {
                   Signup
                 </NavLink>
               </li>
-<<<<<<< HEAD
-=======
               <li>
                 <NavLink
                   activeClassName="active"
@@ -236,7 +231,6 @@ ShallowWrapper {
                   <Connect(ProfileImage) />
                 </NavLink>
               </li>
->>>>>>> Test access to environmental variables in heroku
             </ul>
           </div>
         </div>,
@@ -336,8 +330,6 @@ ShallowWrapper {
                     Signup
                   </NavLink>
                 </li>
-<<<<<<< HEAD
-=======
                 <li>
                   <NavLink
                     activeClassName="active"
@@ -348,7 +340,6 @@ ShallowWrapper {
                     <Connect(ProfileImage) />
                   </NavLink>
                 </li>
->>>>>>> Test access to environmental variables in heroku
               </ul>
             </div>,
           ],
@@ -479,8 +470,6 @@ ShallowWrapper {
                       Signup
                     </NavLink>
                   </li>
-<<<<<<< HEAD
-=======
                   <li>
                     <NavLink
                       activeClassName="active"
@@ -491,7 +480,6 @@ ShallowWrapper {
                       <Connect(ProfileImage) />
                     </NavLink>
                   </li>
->>>>>>> Test access to environmental variables in heroku
                 </ul>,
               ],
               "className": "collapse navbar-collapse",
@@ -620,8 +608,6 @@ ShallowWrapper {
                         Signup
                       </NavLink>
                     </li>,
-<<<<<<< HEAD
-=======
                     <li>
                       <NavLink
                         activeClassName="active"
@@ -632,7 +618,6 @@ ShallowWrapper {
                         <Connect(ProfileImage) />
                       </NavLink>
                     </li>,
->>>>>>> Test access to environmental variables in heroku
                   ],
                   "className": "navbar-nav ml-auto",
                 },
@@ -778,8 +763,6 @@ ShallowWrapper {
                     },
                     "type": "li",
                   },
-<<<<<<< HEAD
-=======
                   Object {
                     "instance": null,
                     "key": undefined,
@@ -820,7 +803,6 @@ ShallowWrapper {
                     },
                     "type": "li",
                   },
->>>>>>> Test access to environmental variables in heroku
                 ],
                 "type": "ul",
               },
@@ -933,8 +915,6 @@ ShallowWrapper {
                     Signup
                   </NavLink>
                 </li>
-<<<<<<< HEAD
-=======
                 <li>
                   <NavLink
                     activeClassName="active"
@@ -945,7 +925,6 @@ ShallowWrapper {
                     <Connect(ProfileImage) />
                   </NavLink>
                 </li>
->>>>>>> Test access to environmental variables in heroku
               </ul>
             </div>
           </div>
@@ -1047,8 +1026,6 @@ ShallowWrapper {
                     Signup
                   </NavLink>
                 </li>
-<<<<<<< HEAD
-=======
                 <li>
                   <NavLink
                     activeClassName="active"
@@ -1059,7 +1036,6 @@ ShallowWrapper {
                     <Connect(ProfileImage) />
                   </NavLink>
                 </li>
->>>>>>> Test access to environmental variables in heroku
               </ul>
             </div>
           </div>,
@@ -1159,8 +1135,6 @@ ShallowWrapper {
                       Signup
                     </NavLink>
                   </li>
-<<<<<<< HEAD
-=======
                   <li>
                     <NavLink
                       activeClassName="active"
@@ -1171,7 +1145,6 @@ ShallowWrapper {
                       <Connect(ProfileImage) />
                     </NavLink>
                   </li>
->>>>>>> Test access to environmental variables in heroku
                 </ul>
               </div>,
             ],
@@ -1302,8 +1275,6 @@ ShallowWrapper {
                         Signup
                       </NavLink>
                     </li>
-<<<<<<< HEAD
-=======
                     <li>
                       <NavLink
                         activeClassName="active"
@@ -1314,7 +1285,6 @@ ShallowWrapper {
                         <Connect(ProfileImage) />
                       </NavLink>
                     </li>
->>>>>>> Test access to environmental variables in heroku
                   </ul>,
                 ],
                 "className": "collapse navbar-collapse",
@@ -1443,8 +1413,6 @@ ShallowWrapper {
                           Signup
                         </NavLink>
                       </li>,
-<<<<<<< HEAD
-=======
                       <li>
                         <NavLink
                           activeClassName="active"
@@ -1455,7 +1423,6 @@ ShallowWrapper {
                           <Connect(ProfileImage) />
                         </NavLink>
                       </li>,
->>>>>>> Test access to environmental variables in heroku
                     ],
                     "className": "navbar-nav ml-auto",
                   },
@@ -1601,8 +1568,6 @@ ShallowWrapper {
                       },
                       "type": "li",
                     },
-<<<<<<< HEAD
-=======
                     Object {
                       "instance": null,
                       "key": undefined,
@@ -1643,7 +1608,6 @@ ShallowWrapper {
                       },
                       "type": "li",
                     },
->>>>>>> Test access to environmental variables in heroku
                   ],
                   "type": "ul",
                 },

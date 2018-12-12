@@ -1,11 +1,16 @@
 import React from "react";
-import { shallow } from "enzyme";
+import { shallow, mount } from "enzyme";
 import { ProfileImage } from "../../src/components/ProfileImage";
 
-it('test profile image html', () => {
-  const username = "kalyango"
-  const component = shallow(
-    <ProfileImage fetchProfile={jest.fn()} username={username} />
+it("test profile image html", () => {
+  localStorage.setItem("username", "kalyango");
+  const username = localStorage.getItem("username");
+  const props = {
+    profile: {
+      user: { image: "" }
+    }
+  };
+  const component = mount(
+    <ProfileImage fetchProfile={jest.fn()} username={username} {...props} />
   );
-  expect(component).toMatchSnapshot();
 });

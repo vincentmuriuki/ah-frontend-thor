@@ -26,17 +26,12 @@ export class EditProfile extends Component {
         image: this.props.image
       };
       this.props.editProfile(profileData);
-      // toastr.success("You have successfully uploaded your profile");
-      // setTimeout(function(){ window.location.replace("/profile"); }, 2000);
     } else {
       const profileData = {
         bio: this.state.bio,
         image: this.state.image
       };
       this.props.editProfile(profileData);
-      toastr.success("You have successfully uploaded your profile");
-      setTimeout(function(){ window.location.replace("/profile"); }, 2000);
-
     }
   };
 

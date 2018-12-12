@@ -9,6 +9,8 @@ const initialState = {
 	image: ""
 };
 
+import {alert} from "../actions/loginActions"
+
 export default function(state = initialState, action) {
 	switch (action.type) {
 		case FETCH_PROFILE_SUCCESS:
@@ -17,7 +19,8 @@ export default function(state = initialState, action) {
 				user: action.payload
 			};
     case EDIT_PROFILE:
-      alert("success", {}, null, null, "/profile")
+      alert("success", "You have successfully updated your account", null, null, "/profile")
+      console.log("this runs--", action.payload);
 			return {
 				...state,
 				item: action.payload

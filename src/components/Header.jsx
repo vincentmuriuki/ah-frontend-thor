@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import ProfileImage from "./ProfileImage";
 
 const Header = () => (
   <header>
@@ -46,7 +47,6 @@ const Header = () => (
               </NavLink>
             </li>
             <li className="nav-item">
-              {/* <a className="nav-link" href="signup.html">Sign Up</a> */}
               <NavLink to="/signup" className="navbar-brand">
                 Signup
               </NavLink>

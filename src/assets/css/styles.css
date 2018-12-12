@@ -97,9 +97,10 @@ textarea.form-control.no-border {
   margin-left: auto;
   margin-right: auto;
 }
-.header-profile {
-  width: 10%;
-  height: 20px;
+.header-profile-image {
+  width: 40px;
+  height: 40px;
+  padding-right: 0;
 }
 @media (max-width: 1210px) {
   .profile-image {
@@ -154,4 +155,5 @@ textarea.form-control.no-border {
   position: relative;
   bottom: 0px;
 }
+
 /*End of Footer */
