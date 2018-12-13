@@ -2,6 +2,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import ProfileImage from "./ProfileImage";
+import SearchForm from "../containers/search/SearchForm";
 
 const Header = () => (
   <header>
@@ -31,19 +32,10 @@ const Header = () => (
           </ul>
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <form className="form-inline">
-                <div className="md-form my-1">
-                  <input
-                    className="form-control mr-sm-2"
-                    type="text"
-                    placeholder="Search"
-                    aria-label="Search"
-                  />
-                </div>
-              </form>
+              <SearchForm />
             </li>
             <li>
-              <NavLink to="/Profile" className="navbar-brand">
+              <NavLink to={"/Profile"} className={"navbar-brand"}>
                 <ProfileImage />
               </NavLink>
             </li>

@@ -7,8 +7,9 @@ import loginReducer from "./loginReducer";
 import social from "./socialReducer";
 import articleReducer from "./articleReducer";
 import userVerifiedReducer from "./emailVerification";
-import getAllArticlesReducer  from "./articlesReducer";
-import singleArticleReducer  from "./singleArticleReducer";
+import getAllArticlesReducer from "./articlesReducer";
+import singleArticleReducer from "./singleArticleReducer";
+import searchReducer from "./searchReducer";
 
 export default combineReducers({
   signUpReducer,
@@ -17,6 +18,7 @@ export default combineReducers({
   social,
   articleReducer,
   userVerifiedReducer,
-  articles:getAllArticlesReducer,
-  article:singleArticleReducer
+  articles: getAllArticlesReducer,
+  article: singleArticleReducer,
+  search: searchReducer
 });
