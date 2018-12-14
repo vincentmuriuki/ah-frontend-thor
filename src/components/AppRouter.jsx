@@ -17,6 +17,8 @@ import EditProfile from "../containers/Profile/EditProfile";
 import "../assets/css/styles.css";
 import SignOut from "./SignOut";
 import PostArticle from "./article/PostArticle";
+import UpdateUserInfo from "../containers/EmailVerification";
+
 
 const AppRouter = () => (
   <Provider store={store}>
@@ -34,6 +36,7 @@ const AppRouter = () => (
             <Route path="/editprofile" component={EditProfile} />
             <Route path="/signout" component={SignOut} />
             <Route path="/post_article" component={PostArticle} />
+            <Route path="/updateuser" component={UpdateUserInfo} />
           </div>
         </Root>
       </React.Fragment>

@@ -9,3 +9,5 @@ export const SOCIAL_LOGIN = "SOCIAL_LOGIN";
 export const LOGIN = "LOGIN";
 export const POST_ARTICLE = "POST_ARTICLE";
 export const IMAGE_URL = "IMAGE_URL";
+export const ARTICLE_DISLIKES = "ARTICLE_DISLIKES";
+export const ARTICLE_LIKES = "ARTICLE_LIKES";
