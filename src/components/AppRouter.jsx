@@ -16,6 +16,7 @@ import ChangePasswordPage from "../containers/resetPassword/ChangePasswordContai
 import Profile from "../containers/Profile/Profile";
 import EditProfile from "../containers/Profile/EditProfile";
 import "../assets/css/styles.css";
+import SignOut from "./SignOut";
 const AppRouter = () => (
   <Provider store={store}>
     <Router>
@@ -30,6 +31,7 @@ const AppRouter = () => (
             <Route path="/update_password" component={ChangePasswordPage} />
             <Route path="/profile" component={Profile} />
             <Route path="/editprofile" component={EditProfile} />
+            <Route path="/signout" component={SignOut} />
           </div>
         </Root>
       </React.Fragment>
