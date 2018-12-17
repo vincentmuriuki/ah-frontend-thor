@@ -7,7 +7,7 @@ const initialUserState = {
   user: null,
   token: null
 };
-let data = {};
+let data;
 
 const social = (state = initialUserState, action) => {
   switch (action.type) {
