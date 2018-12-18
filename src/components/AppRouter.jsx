@@ -19,6 +19,7 @@ import SignOut from "./SignOut";
 import PostArticle from "./article/PostArticle";
 import UpdateUserInfo from "../containers/EmailVerification";
 import Bookmarks from "../containers/bookmarks/Bookmarks";
+import EditArticle from "./article/EditArticle";
 
 import Article from "../containers/viewArticles/articleView";
 import SearchResults from "../containers/search/SearchResults";
@@ -45,6 +46,7 @@ const AppRouter = () => (
               component={SearchResults}
             />
             <Route path="/bookmarkslist" component={Bookmarks} />
+            <Route path="/edit_article/:id" component={EditArticle} />
           </div>
         </Root>
       </React.Fragment>
