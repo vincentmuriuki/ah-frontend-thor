@@ -5,7 +5,7 @@ import propTypes from "prop-types";
 import TagsInput from "react-tagsinput";
 import "react-tagsinput/react-tagsinput.css";
 
-import createArticles from "../../actions/articleActions";
+import {createArticles} from "../../actions/articleActions";
 
 class PostArticle extends Component {
   state = {

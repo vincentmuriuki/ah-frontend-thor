@@ -1,4 +1,4 @@
-import { POST_ARTICLE } from "../actions/types";
+import { POST_ARTICLE, PROFILE_ARTICLES, GET_ARTICLE_BY_ID, UPDATE_ARTICLE } from "../actions/types";
 import { alert } from "../actions/loginActions";
 
 const initialState = {
@@ -7,14 +7,33 @@ const initialState = {
 };
 
 const articleReducer = (state = initialState, action) => {
+  const { payload } = action;
   switch (action.type) {
-    
   case POST_ARTICLE:
     alert("success", "Article Successfully Created", null, null, "/");
     return {
       ...state,
-      article: action.payload
+      article: payload
     };
+  case PROFILE_ARTICLES:{
+    return {
+      ...state,
+      articles: payload
+    };
+  }
+  case GET_ARTICLE_BY_ID:{ 
+    return {
+      ...state,
+      articles: payload
+    };
+  }
+  case UPDATE_ARTICLE:{
+    console.log(payload)
+    return {
+      ...state,
+      article: payload
+    };
+  }
   default:
     return state;
   }

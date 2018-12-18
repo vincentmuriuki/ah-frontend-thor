@@ -3,7 +3,7 @@ import configureStore from "redux-mock-store";
 import thunk from "redux-thunk";
 import fetchMock from "fetch-mock";
 
-import createArticles  from "../../src/actions/articleActions";
+import {createArticles}  from "../../src/actions/articleActions";
 import { POST_ARTICLE } from "../../src/actions/types";
 
 
