@@ -23,14 +23,16 @@ ShallowWrapper {
         <div
           className="container"
         >
-          <a
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
             className="navbar-brand"
-            href="/index.html"
+            to="/home"
           >
             <strong>
               Author's Haven
             </strong>
-          </a>
+          </NavLink>
           <button
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
@@ -107,14 +109,16 @@ ShallowWrapper {
         "children": <div
           className="container"
         >
-          <a
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
             className="navbar-brand"
-            href="/index.html"
+            to="/home"
           >
             <strong>
               Author's Haven
             </strong>
-          </a>
+          </NavLink>
           <button
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
@@ -189,14 +193,16 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <a
+            <NavLink
+              activeClassName="active"
+              aria-current="page"
               className="navbar-brand"
-              href="/index.html"
+              to="/home"
             >
               <strong>
                 Author's Haven
               </strong>
-            </a>,
+            </NavLink>,
             <button
               aria-controls="navbarSupportedContent"
               aria-expanded="false"
@@ -269,13 +275,15 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "host",
+            "nodeType": "function",
             "props": Object {
+              "activeClassName": "active",
+              "aria-current": "page",
               "children": <strong>
                 Author's Haven
               </strong>,
               "className": "navbar-brand",
-              "href": "/index.html",
+              "to": "/home",
             },
             "ref": null,
             "rendered": Object {
@@ -289,7 +297,7 @@ ShallowWrapper {
               "rendered": "Author's Haven",
               "type": "strong",
             },
-            "type": "a",
+            "type": [Function],
           },
           Object {
             "instance": null,
@@ -609,14 +617,16 @@ ShallowWrapper {
           <div
             className="container"
           >
-            <a
+            <NavLink
+              activeClassName="active"
+              aria-current="page"
               className="navbar-brand"
-              href="/index.html"
+              to="/home"
             >
               <strong>
                 Author's Haven
               </strong>
-            </a>
+            </NavLink>
             <button
               aria-controls="navbarSupportedContent"
               aria-expanded="false"
@@ -693,14 +703,16 @@ ShallowWrapper {
           "children": <div
             className="container"
           >
-            <a
+            <NavLink
+              activeClassName="active"
+              aria-current="page"
               className="navbar-brand"
-              href="/index.html"
+              to="/home"
             >
               <strong>
                 Author's Haven
               </strong>
-            </a>
+            </NavLink>
             <button
               aria-controls="navbarSupportedContent"
               aria-expanded="false"
@@ -775,14 +787,16 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <a
+              <NavLink
+                activeClassName="active"
+                aria-current="page"
                 className="navbar-brand"
-                href="/index.html"
+                to="/home"
               >
                 <strong>
                   Author's Haven
                 </strong>
-              </a>,
+              </NavLink>,
               <button
                 aria-controls="navbarSupportedContent"
                 aria-expanded="false"
@@ -855,13 +869,15 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "host",
+              "nodeType": "function",
               "props": Object {
+                "activeClassName": "active",
+                "aria-current": "page",
                 "children": <strong>
                   Author's Haven
                 </strong>,
                 "className": "navbar-brand",
-                "href": "/index.html",
+                "to": "/home",
               },
               "ref": null,
               "rendered": Object {
@@ -875,7 +891,7 @@ ShallowWrapper {
                 "rendered": "Author's Haven",
                 "type": "strong",
               },
-              "type": "a",
+              "type": [Function],
             },
             Object {
               "instance": null,

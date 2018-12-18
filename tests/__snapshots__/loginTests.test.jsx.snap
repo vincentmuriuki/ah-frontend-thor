@@ -1232,14 +1232,16 @@ ShallowWrapper {
         <div
           className="container"
         >
-          <a
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
             className="navbar-brand"
-            href="/index.html"
+            to="/home"
           >
             <strong>
               Author's Haven
             </strong>
-          </a>
+          </NavLink>
           <button
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
@@ -1316,14 +1318,16 @@ ShallowWrapper {
         "children": <div
           className="container"
         >
-          <a
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
             className="navbar-brand"
-            href="/index.html"
+            to="/home"
           >
             <strong>
               Author's Haven
             </strong>
-          </a>
+          </NavLink>
           <button
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
@@ -1398,14 +1402,16 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <a
+            <NavLink
+              activeClassName="active"
+              aria-current="page"
               className="navbar-brand"
-              href="/index.html"
+              to="/home"
             >
               <strong>
                 Author's Haven
               </strong>
-            </a>,
+            </NavLink>,
             <button
               aria-controls="navbarSupportedContent"
               aria-expanded="false"
@@ -1478,13 +1484,15 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "host",
+            "nodeType": "function",
             "props": Object {
+              "activeClassName": "active",
+              "aria-current": "page",
               "children": <strong>
                 Author's Haven
               </strong>,
               "className": "navbar-brand",
-              "href": "/index.html",
+              "to": "/home",
             },
             "ref": null,
             "rendered": Object {
@@ -1498,7 +1506,7 @@ ShallowWrapper {
               "rendered": "Author's Haven",
               "type": "strong",
             },
-            "type": "a",
+            "type": [Function],
           },
           Object {
             "instance": null,
@@ -1818,14 +1826,16 @@ ShallowWrapper {
           <div
             className="container"
           >
-            <a
+            <NavLink
+              activeClassName="active"
+              aria-current="page"
               className="navbar-brand"
-              href="/index.html"
+              to="/home"
             >
               <strong>
                 Author's Haven
               </strong>
-            </a>
+            </NavLink>
             <button
               aria-controls="navbarSupportedContent"
               aria-expanded="false"
@@ -1902,14 +1912,16 @@ ShallowWrapper {
           "children": <div
             className="container"
           >
-            <a
+            <NavLink
+              activeClassName="active"
+              aria-current="page"
               className="navbar-brand"
-              href="/index.html"
+              to="/home"
             >
               <strong>
                 Author's Haven
               </strong>
-            </a>
+            </NavLink>
             <button
               aria-controls="navbarSupportedContent"
               aria-expanded="false"
@@ -1984,14 +1996,16 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <a
+              <NavLink
+                activeClassName="active"
+                aria-current="page"
                 className="navbar-brand"
-                href="/index.html"
+                to="/home"
               >
                 <strong>
                   Author's Haven
                 </strong>
-              </a>,
+              </NavLink>,
               <button
                 aria-controls="navbarSupportedContent"
                 aria-expanded="false"
@@ -2064,13 +2078,15 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "host",
+              "nodeType": "function",
               "props": Object {
+                "activeClassName": "active",
+                "aria-current": "page",
                 "children": <strong>
                   Author's Haven
                 </strong>,
                 "className": "navbar-brand",
-                "href": "/index.html",
+                "to": "/home",
               },
               "ref": null,
               "rendered": Object {
@@ -2084,7 +2100,7 @@ ShallowWrapper {
                 "rendered": "Author's Haven",
                 "type": "strong",
               },
-              "type": "a",
+              "type": [Function],
             },
             Object {
               "instance": null,
@@ -2430,11 +2446,32 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": "This is Home!",
-      "className": "container",
+      "children": Array [
+        <HomeHeaderSection />,
+        <Connect(ArticleDetails) />,
+      ],
     },
     "ref": null,
-    "rendered": "This is Home!",
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -2443,11 +2480,32 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "This is Home!",
-        "className": "container",
+        "children": Array [
+          <HomeHeaderSection />,
+          <Connect(ArticleDetails) />,
+        ],
       },
       "ref": null,
-      "rendered": "This is Home!",
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
       "type": "div",
     },
   ],

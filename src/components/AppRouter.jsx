@@ -20,6 +20,7 @@ import PostArticle from "./article/PostArticle";
 import UpdateUserInfo from "../containers/EmailVerification";
 
 
+import Article from "../containers/viewArticles/articleView";
 const AppRouter = () => (
   <Provider store={store}>
     <Router>
@@ -37,6 +38,7 @@ const AppRouter = () => (
             <Route path="/signout" component={SignOut} />
             <Route path="/post_article" component={PostArticle} />
             <Route path="/updateuser" component={UpdateUserInfo} />
+            <Route path="/article" component={Article} />
           </div>
         </Root>
       </React.Fragment>
