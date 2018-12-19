@@ -1,78 +1,23 @@
 body {
-  font-size: 1.6rem;
-  background: #f5f5f5;
+  // background: #f5f5f5;
 }
-
-
-.View {
-	background: url("https://mdbootstrap.com/img/Photos/Others/img (51).jpg")no-repeat center center;
-	background-size: cover;
-}
-@media (min-width: 768px) {
-	.View {
-			overflow: visible;
-			margin-top: -10px;
-	}
-}
-.navbar {
-	z-index: 1;
-}
-
-.View {
-height: 100%;
-}
-/* Pagination */
-.blog-pagination {
-	margin-bottom: 4rem;
-}
-.blog-pagination > .btn {
-	border-radius: 2rem;
-}
-.articles{
-	margin-top: 100px;
-}
-.social-view{
-	margin-top: 35vh;
-}
-.card-comments img {
-	width: 4rem; }
-.article-icons {
-	display: inline-block;
-	}
-	.Card {
-			margin: 0 auto; /* Added */
-						float: none; /* Added */
-						margin-bottom: 10px; /* Added */
-		}
-		input.form-control.no-border,textarea.form-control.no-border {
-					border: 0 !important;
-					box-shadow: none !important;
-	}
-	.in-font {
-			font-size: 40px;
-
-}
-
-
-.article__image{
+.article__image {
   height: 200px;
 }
 
-
-.article__card{
+.article__card {
   background-color: antiquewhite;
 }
 
-.article__body{
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;     /** IE6+, Firefox 7+, Opera 11+, Chrome, Safari **/
-    width: 250px;
+.article__body {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /** IE6+, Firefox 7+, Opera 11+, Chrome, Safari **/
+  width: 250px;
 }
 
-.loading__image
-{
+.loading__image {
   height: 200px;
   width: 200px;
   margin: auto;

@@ -19,8 +19,8 @@ import SignOut from "./SignOut";
 import PostArticle from "./article/PostArticle";
 import UpdateUserInfo from "../containers/EmailVerification";
 
-
 import Article from "../containers/viewArticles/articleView";
+import SearchResults from "../containers/search/SearchResults";
 const AppRouter = () => (
   <Provider store={store}>
     <Router>
@@ -39,6 +39,10 @@ const AppRouter = () => (
             <Route path="/post_article" component={PostArticle} />
             <Route path="/updateuser" component={UpdateUserInfo} />
             <Route path="/article" component={Article} />
+            <Route
+              path="/searchresults/:type/:searchData"
+              component={SearchResults}
+            />
           </div>
         </Root>
       </React.Fragment>

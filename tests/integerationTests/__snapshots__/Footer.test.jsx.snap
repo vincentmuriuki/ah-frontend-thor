@@ -70,20 +70,7 @@ ShallowWrapper {
               <li
                 className="nav-item"
               >
-                <form
-                  className="form-inline"
-                >
-                  <div
-                    className="md-form my-1"
-                  >
-                    <input
-                      aria-label="Search"
-                      className="form-control mr-sm-2"
-                      placeholder="Search"
-                      type="text"
-                    />
-                  </div>
-                </form>
+                <withRouter(SearchForm) />
               </li>
               <li>
                 <NavLink
@@ -156,20 +143,7 @@ ShallowWrapper {
               <li
                 className="nav-item"
               >
-                <form
-                  className="form-inline"
-                >
-                  <div
-                    className="md-form my-1"
-                  >
-                    <input
-                      aria-label="Search"
-                      className="form-control mr-sm-2"
-                      placeholder="Search"
-                      type="text"
-                    />
-                  </div>
-                </form>
+                <withRouter(SearchForm) />
               </li>
               <li>
                 <NavLink
@@ -240,20 +214,7 @@ ShallowWrapper {
                 <li
                   className="nav-item"
                 >
-                  <form
-                    className="form-inline"
-                  >
-                    <div
-                      className="md-form my-1"
-                    >
-                      <input
-                        aria-label="Search"
-                        className="form-control mr-sm-2"
-                        placeholder="Search"
-                        type="text"
-                      />
-                    </div>
-                  </form>
+                  <withRouter(SearchForm) />
                 </li>
                 <li>
                   <NavLink
@@ -355,20 +316,7 @@ ShallowWrapper {
                   <li
                     className="nav-item"
                   >
-                    <form
-                      className="form-inline"
-                    >
-                      <div
-                        className="md-form my-1"
-                      >
-                        <input
-                          aria-label="Search"
-                          className="form-control mr-sm-2"
-                          placeholder="Search"
-                          type="text"
-                        />
-                      </div>
-                    </form>
+                    <withRouter(SearchForm) />
                   </li>
                   <li>
                     <NavLink
@@ -448,20 +396,7 @@ ShallowWrapper {
                     <li
                       className="nav-item"
                     >
-                      <form
-                        className="form-inline"
-                      >
-                        <div
-                          className="md-form my-1"
-                        >
-                          <input
-                            aria-label="Search"
-                            className="form-control mr-sm-2"
-                            placeholder="Search"
-                            type="text"
-                          />
-                        </div>
-                      </form>
+                      <withRouter(SearchForm) />
                     </li>,
                     <li>
                       <NavLink
@@ -483,72 +418,18 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": <form
-                        className="form-inline"
-                      >
-                        <div
-                          className="md-form my-1"
-                        >
-                          <input
-                            aria-label="Search"
-                            className="form-control mr-sm-2"
-                            placeholder="Search"
-                            type="text"
-                          />
-                        </div>
-                      </form>,
+                      "children": <withRouter(SearchForm) />,
                       "className": "nav-item",
                     },
                     "ref": null,
                     "rendered": Object {
                       "instance": null,
                       "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": <div
-                          className="md-form my-1"
-                        >
-                          <input
-                            aria-label="Search"
-                            className="form-control mr-sm-2"
-                            placeholder="Search"
-                            type="text"
-                          />
-                        </div>,
-                        "className": "form-inline",
-                      },
+                      "nodeType": "function",
+                      "props": Object {},
                       "ref": null,
-                      "rendered": Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "children": <input
-                            aria-label="Search"
-                            className="form-control mr-sm-2"
-                            placeholder="Search"
-                            type="text"
-                          />,
-                          "className": "md-form my-1",
-                        },
-                        "ref": null,
-                        "rendered": Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "host",
-                          "props": Object {
-                            "aria-label": "Search",
-                            "className": "form-control mr-sm-2",
-                            "placeholder": "Search",
-                            "type": "text",
-                          },
-                          "ref": null,
-                          "rendered": null,
-                          "type": "input",
-                        },
-                        "type": "div",
-                      },
-                      "type": "form",
+                      "rendered": null,
+                      "type": [Function],
                     },
                     "type": "li",
                   },
@@ -664,20 +545,7 @@ ShallowWrapper {
                 <li
                   className="nav-item"
                 >
-                  <form
-                    className="form-inline"
-                  >
-                    <div
-                      className="md-form my-1"
-                    >
-                      <input
-                        aria-label="Search"
-                        className="form-control mr-sm-2"
-                        placeholder="Search"
-                        type="text"
-                      />
-                    </div>
-                  </form>
+                  <withRouter(SearchForm) />
                 </li>
                 <li>
                   <NavLink
@@ -750,20 +618,7 @@ ShallowWrapper {
                 <li
                   className="nav-item"
                 >
-                  <form
-                    className="form-inline"
-                  >
-                    <div
-                      className="md-form my-1"
-                    >
-                      <input
-                        aria-label="Search"
-                        className="form-control mr-sm-2"
-                        placeholder="Search"
-                        type="text"
-                      />
-                    </div>
-                  </form>
+                  <withRouter(SearchForm) />
                 </li>
                 <li>
                   <NavLink
@@ -834,20 +689,7 @@ ShallowWrapper {
                   <li
                     className="nav-item"
                   >
-                    <form
-                      className="form-inline"
-                    >
-                      <div
-                        className="md-form my-1"
-                      >
-                        <input
-                          aria-label="Search"
-                          className="form-control mr-sm-2"
-                          placeholder="Search"
-                          type="text"
-                        />
-                      </div>
-                    </form>
+                    <withRouter(SearchForm) />
                   </li>
                   <li>
                     <NavLink
@@ -949,20 +791,7 @@ ShallowWrapper {
                     <li
                       className="nav-item"
                     >
-                      <form
-                        className="form-inline"
-                      >
-                        <div
-                          className="md-form my-1"
-                        >
-                          <input
-                            aria-label="Search"
-                            className="form-control mr-sm-2"
-                            placeholder="Search"
-                            type="text"
-                          />
-                        </div>
-                      </form>
+                      <withRouter(SearchForm) />
                     </li>
                     <li>
                       <NavLink
@@ -1042,20 +871,7 @@ ShallowWrapper {
                       <li
                         className="nav-item"
                       >
-                        <form
-                          className="form-inline"
-                        >
-                          <div
-                            className="md-form my-1"
-                          >
-                            <input
-                              aria-label="Search"
-                              className="form-control mr-sm-2"
-                              placeholder="Search"
-                              type="text"
-                            />
-                          </div>
-                        </form>
+                        <withRouter(SearchForm) />
                       </li>,
                       <li>
                         <NavLink
@@ -1077,72 +893,18 @@ ShallowWrapper {
                       "key": undefined,
                       "nodeType": "host",
                       "props": Object {
-                        "children": <form
-                          className="form-inline"
-                        >
-                          <div
-                            className="md-form my-1"
-                          >
-                            <input
-                              aria-label="Search"
-                              className="form-control mr-sm-2"
-                              placeholder="Search"
-                              type="text"
-                            />
-                          </div>
-                        </form>,
+                        "children": <withRouter(SearchForm) />,
                         "className": "nav-item",
                       },
                       "ref": null,
                       "rendered": Object {
                         "instance": null,
                         "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "children": <div
-                            className="md-form my-1"
-                          >
-                            <input
-                              aria-label="Search"
-                              className="form-control mr-sm-2"
-                              placeholder="Search"
-                              type="text"
-                            />
-                          </div>,
-                          "className": "form-inline",
-                        },
+                        "nodeType": "function",
+                        "props": Object {},
                         "ref": null,
-                        "rendered": Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "host",
-                          "props": Object {
-                            "children": <input
-                              aria-label="Search"
-                              className="form-control mr-sm-2"
-                              placeholder="Search"
-                              type="text"
-                            />,
-                            "className": "md-form my-1",
-                          },
-                          "ref": null,
-                          "rendered": Object {
-                            "instance": null,
-                            "key": undefined,
-                            "nodeType": "host",
-                            "props": Object {
-                              "aria-label": "Search",
-                              "className": "form-control mr-sm-2",
-                              "placeholder": "Search",
-                              "type": "text",
-                            },
-                            "ref": null,
-                            "rendered": null,
-                            "type": "input",
-                          },
-                          "type": "div",
-                        },
-                        "type": "form",
+                        "rendered": null,
+                        "type": [Function],
                       },
                       "type": "li",
                     },
