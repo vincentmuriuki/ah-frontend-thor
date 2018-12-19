@@ -11,7 +11,8 @@ class PublishedArticles extends Component {
   };
 
   render() {
-    const articleItems = this.props.articles.map(article => (
+    const articleItems = Array.from(
+      this.props.articles).map(article => (
       <div key={article.id}>
         <li className="media">
           <img className="d-flex mr-3 profile-card-image" src={article.image_url} alt="" />
@@ -21,17 +22,9 @@ class PublishedArticles extends Component {
             </a>
             {article.description}
           </div>
-          <Link to={`/edit_article/${article.id}`} className="btn btn-info btn-md pull-right" type="submit">Edit</Link>
+          <a className="btn btn-info btn-md pull-right" href={`/edit_article/${article.id}`}>Edit</a>
           <button className="btn btn-danger btn-md pull-right" type="submit">Delete</button>
-          
         </li>
-
-
-        {/* <h3 className="alert-primary">{article.title}</h3>
-        <button className="btn btn-primary" onClick={
-            this.onGetArticleClick.bind(this, article.id)
-        }>click</button>
-        <p>{article.body}</p> */}
       </div>
     ));
     return (

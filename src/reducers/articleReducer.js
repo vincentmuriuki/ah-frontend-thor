@@ -1,4 +1,4 @@
-import { POST_ARTICLE, PROFILE_ARTICLES, GET_ARTICLE_BY_ID, UPDATE_ARTICLE } from "../actions/types";
+import { POST_ARTICLE, PROFILE_ARTICLES, GET_ARTICLE_BY_ID, UPDATE_ARTICLE, UPDATE_FAIL } from "../actions/types";
 import { alert } from "../actions/loginActions";
 
 const initialState = {
@@ -28,7 +28,14 @@ const articleReducer = (state = initialState, action) => {
     };
   }
   case UPDATE_ARTICLE:{
-    console.log(payload)
+    alert("success", "Article successfully Updated", null, null, "/Profile");
+    return {
+      ...state,
+      article: payload
+    };
+  }
+  case UPDATE_FAIL:{
+    alert("error", "Error Please make sure all required fields are filled", null, null, null);
     return {
       ...state,
       article: payload
