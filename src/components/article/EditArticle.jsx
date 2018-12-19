@@ -259,6 +259,7 @@ EditArticle.propTypes = {
   updateArticle: propTypes.func.isRequired
 };
 
+export { EditArticle };
 export default connect(
   mapStateToProps,
   mapDispatchToProps

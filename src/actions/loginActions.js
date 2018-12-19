@@ -6,14 +6,14 @@ import toastr from "toastr";
 export const loginUrl = "https://ah-backend-thor.herokuapp.com/api/users/login/";
 
 export const alert=(type,errorMsg,username, token, url)=>{
-  if(type === "error" || "success" ||"warning"  && !username && !token){
+  if(type === "error" || "success" && !username && !token){
     type === "success" ? toastr.success(errorMsg) && url && setTimeout(() => window.location.replace(url), 3000): toastr.error(errorMsg);
   }
   else if(type==="success" && !errorMsg){
     toastr.success(`Logging in as ${username}!`);
     localStorage.setItem("token", token);
     localStorage.setItem("username", username);
-    setTimeout(() => window.location.replace(url), 3000);
+    window.location.replace(url);
   };
 
 };

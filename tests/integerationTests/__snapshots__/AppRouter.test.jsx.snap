@@ -64,6 +64,22 @@ ShallowWrapper {
               />
               <Route
                 component={[Function]}
+                path="/updateuser"
+              />
+              <Route
+                component={[Function]}
+                path="/article"
+              />
+              <Route
+                component={[Function]}
+                path="/searchresults/:type/:searchData"
+              />
+              <Route
+                component={[Function]}
+                path="/bookmarkslist"
+              />
+              <Route
+                component={[Function]}
                 path="/edit_article/:id"
               />
             </div>
@@ -130,6 +146,22 @@ ShallowWrapper {
               />
               <Route
                 component={[Function]}
+                path="/updateuser"
+              />
+              <Route
+                component={[Function]}
+                path="/article"
+              />
+              <Route
+                component={[Function]}
+                path="/searchresults/:type/:searchData"
+              />
+              <Route
+                component={[Function]}
+                path="/bookmarkslist"
+              />
+              <Route
+                component={[Function]}
                 path="/edit_article/:id"
               />
             </div>
@@ -184,6 +216,22 @@ ShallowWrapper {
               <Route
                 component={[Function]}
                 path="/post_article"
+              />
+              <Route
+                component={[Function]}
+                path="/updateuser"
+              />
+              <Route
+                component={[Function]}
+                path="/article"
+              />
+              <Route
+                component={[Function]}
+                path="/searchresults/:type/:searchData"
+              />
+              <Route
+                component={[Function]}
+                path="/bookmarkslist"
               />
               <Route
                 component={[Function]}
@@ -242,6 +290,22 @@ ShallowWrapper {
               />
               <Route
                 component={[Function]}
+                path="/updateuser"
+              />
+              <Route
+                component={[Function]}
+                path="/article"
+              />
+              <Route
+                component={[Function]}
+                path="/searchresults/:type/:searchData"
+              />
+              <Route
+                component={[Function]}
+                path="/bookmarkslist"
+              />
+              <Route
+                component={[Function]}
                 path="/edit_article/:id"
               />
             </div>,
@@ -293,6 +357,22 @@ ShallowWrapper {
                 <Route
                   component={[Function]}
                   path="/post_article"
+                />,
+                <Route
+                  component={[Function]}
+                  path="/updateuser"
+                />,
+                <Route
+                  component={[Function]}
+                  path="/article"
+                />,
+                <Route
+                  component={[Function]}
+                  path="/searchresults/:type/:searchData"
+                />,
+                <Route
+                  component={[Function]}
+                  path="/bookmarkslist"
                 />,
                 <Route
                   component={[Function]}
@@ -429,6 +509,54 @@ ShallowWrapper {
                 "nodeType": "class",
                 "props": Object {
                   "component": [Function],
+                  "path": "/updateuser",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "component": [Function],
+                  "path": "/article",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "component": [Function],
+                  "path": "/searchresults/:type/:searchData",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "component": [Function],
+                  "path": "/bookmarkslist",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "component": [Function],
                   "path": "/edit_article/:id",
                 },
                 "ref": null,
@@ -499,6 +627,22 @@ ShallowWrapper {
                 />
                 <Route
                   component={[Function]}
+                  path="/updateuser"
+                />
+                <Route
+                  component={[Function]}
+                  path="/article"
+                />
+                <Route
+                  component={[Function]}
+                  path="/searchresults/:type/:searchData"
+                />
+                <Route
+                  component={[Function]}
+                  path="/bookmarkslist"
+                />
+                <Route
+                  component={[Function]}
                   path="/edit_article/:id"
                 />
               </div>
@@ -565,6 +709,22 @@ ShallowWrapper {
                 />
                 <Route
                   component={[Function]}
+                  path="/updateuser"
+                />
+                <Route
+                  component={[Function]}
+                  path="/article"
+                />
+                <Route
+                  component={[Function]}
+                  path="/searchresults/:type/:searchData"
+                />
+                <Route
+                  component={[Function]}
+                  path="/bookmarkslist"
+                />
+                <Route
+                  component={[Function]}
                   path="/edit_article/:id"
                 />
               </div>
@@ -619,6 +779,22 @@ ShallowWrapper {
                 <Route
                   component={[Function]}
                   path="/post_article"
+                />
+                <Route
+                  component={[Function]}
+                  path="/updateuser"
+                />
+                <Route
+                  component={[Function]}
+                  path="/article"
+                />
+                <Route
+                  component={[Function]}
+                  path="/searchresults/:type/:searchData"
+                />
+                <Route
+                  component={[Function]}
+                  path="/bookmarkslist"
                 />
                 <Route
                   component={[Function]}
@@ -677,6 +853,22 @@ ShallowWrapper {
                 />
                 <Route
                   component={[Function]}
+                  path="/updateuser"
+                />
+                <Route
+                  component={[Function]}
+                  path="/article"
+                />
+                <Route
+                  component={[Function]}
+                  path="/searchresults/:type/:searchData"
+                />
+                <Route
+                  component={[Function]}
+                  path="/bookmarkslist"
+                />
+                <Route
+                  component={[Function]}
                   path="/edit_article/:id"
                 />
               </div>,
@@ -728,6 +920,22 @@ ShallowWrapper {
                   <Route
                     component={[Function]}
                     path="/post_article"
+                  />,
+                  <Route
+                    component={[Function]}
+                    path="/updateuser"
+                  />,
+                  <Route
+                    component={[Function]}
+                    path="/article"
+                  />,
+                  <Route
+                    component={[Function]}
+                    path="/searchresults/:type/:searchData"
+                  />,
+                  <Route
+                    component={[Function]}
+                    path="/bookmarkslist"
                   />,
                   <Route
                     component={[Function]}
@@ -853,6 +1061,54 @@ ShallowWrapper {
                   "props": Object {
                     "component": [Function],
                     "path": "/post_article",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "component": [Function],
+                    "path": "/updateuser",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "component": [Function],
+                    "path": "/article",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "component": [Function],
+                    "path": "/searchresults/:type/:searchData",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "component": [Function],
+                    "path": "/bookmarkslist",
                   },
                   "ref": null,
                   "rendered": null,

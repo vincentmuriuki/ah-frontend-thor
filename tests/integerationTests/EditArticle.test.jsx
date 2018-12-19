@@ -3,8 +3,10 @@ import React from "react";
 import { mount, shallow } from "enzyme";
 import configureStore from "redux-mock-store";
 import thunk from "redux-thunk";
+import sinon from "sinon";
 
-import EditArticle from "../../src/components/article/EditArticle";
+import ConnectedEditArticle from "../../src/components/article/EditArticle";
+import { EditArticle } from "../../src/components/article/EditArticle";
 
 describe("<EditArticle />", () => {
   document
@@ -14,25 +16,27 @@ describe("<EditArticle />", () => {
   const mockStore = configureStore(middlewares);
   const initialUserState = {
     articleReducer: {
-      articles: [{
-        title: "",
-        imageUrl: "",
-        description: "",
-        body: "",
-        audioUrl: "",
-        tags: []
-      }],
+      articles: [
+        {
+          title: "",
+          imageUrl: "",
+          description: "",
+          body: "",
+          audioUrl: "",
+          tags: []
+        }
+      ]
     }
   };
 
   const preventDefault = jest.fn();
   const store = mockStore({ ...initialUserState });
-  const provider = shallow(<EditArticle store={store} match={{ params: { id: 2 } }} />);
-
-
-
-  const PostArticleComponent = mount(<EditArticle store={store} match={{ params: { id: 2 } }} />);
-  
+  const provider = shallow(
+    <ConnectedEditArticle store={store} match={{ params: { id: 2 } }} />
+  );
+  const PostArticleComponent = mount(
+    <ConnectedEditArticle store={store} match={{ params: { id: 2 } }} />
+  );
   it("renders <Provider/> correctly", () => {
     expect(provider).toMatchSnapshot();
   });
@@ -81,5 +85,48 @@ describe("<EditArticle />", () => {
     PostArticleComponent.instance().onTagsChange = mock;
     PostArticleComponent.find("TagsInput").prop("onChange")([]);
     expect(PostArticleComponent.find("TagsInput").props().value).toEqual([]);
+  });
+});
+
+describe("<EditArticle />", () => {
+  document
+    .getElementsByTagName("head")[0]
+    .appendChild(document.createElement("script"));
+  const middlewares = [thunk];
+  const mockStore = configureStore(middlewares);
+  const initialUserState = {
+    articleReducer: {
+      articles: [
+        {
+          title: "",
+          imageUrl: "",
+          description: "",
+          body: "",
+          audioUrl: "",
+          tags: []
+        }
+      ]
+    }
+  };
+
+  const wrapper = shallow(
+    <EditArticle
+      articles={{ articles: {} }}
+      match={{ params: { id: 2 } }}
+      getArticleById={jest.fn()}
+      updateArticle={jest.fn()}
+    />
+  );
+  const props = {
+    title: "someTitle",
+    imageUrl: "",
+    description: "",
+    body: "",
+    audioUrl: "",
+    tag_list: []
+  };
+
+  wrapper.setProps({ articles: props }, () => {
+    expect(wrapper.state().title).toEqual("someTitle");
   });
 });
