@@ -41,7 +41,8 @@ export const ArticleSection = ({
   description,
   body,
   author,
-  publishDate
+  publishDate,
+  readTime
 }) => (
   <div className="col-md-6 mb-4">
     {/* <!--Featured Image--> */}
@@ -53,6 +54,7 @@ export const ArticleSection = ({
     <div className="card mb-4 wow fadeIn">
       {/* <!--Card content--> */}
       <div className="card-body">
+        <p className="read__time">{readTime}</p>
         <p className="h5 my-4">{description}</p>
         <p>{body}</p>
         <p className="publish__date">
@@ -100,6 +102,7 @@ export class SingleArticle extends Component {
                   body={article.body}
                   publishDate={article.created_at}
                   author={author}
+                  readTime={article.read_time}
                 />
               </div>
             </section>
